@@ -1,0 +1,20 @@
+[
+    {
+        "studentID" : "3a261b51-2b01-4b22-a51c-4fce51aaaad8",
+        "roadmapID" : "4480a8a7-e288-46dd-8efd-4110c7ca8f9f",
+        "major" : "CE",
+        "status" : "default"
+    },
+    {
+        "studentID" : "6b8cfa42-9b47-4efc-9086-836dbbc4328c",
+        "roadmapID" : "ede2ccb9-00cd-4e42-b868-918cac69a04a",
+        "major" : "CSCE",
+        "status" : "completed"
+    },
+    {
+        "studentID" : "1c3ba470-37b6-4993-9458-ff20ab986fe7",
+        "roadmapID" : "f9f55e5d-63a0-4dcd-b473-4c6c1f1db4c8",
+        "major" : "CIS",
+        "status" : "incomplete"
+    }
+]

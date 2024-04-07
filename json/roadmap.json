@@ -1,0 +1,35 @@
+[
+    {
+        "roadmapID":"ede2ccb9-00cd-4e42-b868-918cac69a04a",
+        "major":"CSCE",
+        "majorClasses":[ "684f6d78-9f42-4e22-b447-7b15782007b3","d71f3a41-5b83-40b6-94a7-609b01ca2caa", "6c8202fd-b31b-4647-b551-b7f4dbf007a0", "dcf88287-b888-4fe0-949f-1b2ecd8af011", "f16c3f7d-4f83-4a11-8b47-632572514136","42288ffd-4ead-4718-b840-4be2894d8f30","f425f91f-92da-4261-be45-347d81b6ab9d"],
+        "carolinaCore":[ "12224407-e656-4fe7-9078-88f1d9dc8325",  "980e1056-4ed2-4459-b0e7-56d78eca5d73","4bd274cb-260e-47a5-9893-203a3943d704","3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6", "a379a182-57c9-4b28-950d-35903009bce3",  "b6bf4208-6933-4e10-a961-118f12d7acba","66a95212-0d75-4fae-97ff-c3c76c29d47e", "75764c82-d463-4fcf-a367-e7f925416456","8699fb7e-844c-4fcd-b212-7a5ac8f5303e",  "af901bb2-f867-4d7e-a938-06e0d66639c6",  "0fb4ac09-b5df-47a0-a95b-566e31940f04",  "277c57bf-d5b8-4a69-941f-0f494c30d99e","b08931d4-1c51-42df-96b6-aef74900873a", "96cd3d5d-590a-4567-9cc3-787e03cc5140"],
+        "liberalArtsElectives": [ "b125dfce-929a-48ce-9fc8-17f6febd9a2f", "8b489db0-d7a8-44f8-9cae-e3f15d9a258f", "542433a9-cc0e-4d8c-8038-c5d3179c2d64"],
+        "foundationalCourses": ["f8b358bf-d69e-4aae-b10c-8dc98f1f651f","12b2ee6d-d2c5-47fb-93de-08b5950ea2ae", "944f3d4d-9424-48c0-840e-18a79e18e00b","928eb174-dea9-4b98-80b1-ac594c4360f8","f4b55e57-6034-4462-81ca-13c559697988", "c30f5f36-fc9c-49d4-b5c4-baec9cc82194"],
+        "lowerDivisionComputing":["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627", "57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6","3cca9c4e-a195-4759-a761-cfe09adb20b8","789c6ed0-53e3-476c-8761-f08bf727d08c", "dd218911-2c00-46b4-99fc-0aa909331369","9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23","39046cda-f913-4f9b-a002-f06e7c59f235","730005f1-113d-446e-865c-31b46dfbc924"],
+        "labScienceElective":[ "07ab147e-a181-405d-aeec-3c153f2fe695", "ab6753ca-0e22-4674-8e61-5a5020baf250"],
+        "electives":[ "c92f728c-76a7-4cf4-a220-8d41d5468014",  "6b2b4f06-e88d-433b-a9d4-b8d17098babd","ee329944-4e02-4603-9eec-3ec5c2db9381", "2507be35-bc2b-4f1a-a4a6-3839f81e6f08", "8a1b67dc-1746-4e14-ba41-5be701bb4d4e","4e8f9533-2b4a-4592-912b-a3177bf357e0", "2a7efa55-7249-495b-a47e-f497f64dbf0c"]
+    },
+    {
+        "roadmapID":"f9f55e5d-63a0-4dcd-b473-4c6c1f1db4c8",
+        "major":"CIS",
+        "majorClasses":[ "9583ee33-5e0b-43fe-9bc7-7ef3816da225", "6c8202fd-b31b-4647-b551-b7f4dbf007a0", "f16c3f7d-4f83-4a11-8b47-632572514136","42288ffd-4ead-4718-b840-4be2894d8f30", "f425f91f-92da-4261-be45-347d81b6ab9d","86229990-45b3-48e6-b444-0b9db99e8a8c","5dfb6a47-ff2c-4977-ab64-588da4f687a4","fdf13bc5-f270-4c26-a749-720a50d0b00a"],
+        "carolinaCore":[ "12224407-e656-4fe7-9078-88f1d9dc8325","980e1056-4ed2-4459-b0e7-56d78eca5d73","2e2ebf3f-c4d3-4dae-956b-d8afa7fca627","4bd274cb-260e-47a5-9893-203a3943d704", "a379a182-57c9-4b28-950d-35903009bce3", "b6bf4208-6933-4e10-a961-118f12d7acba","66a95212-0d75-4fae-97ff-c3c76c29d47e","75764c82-d463-4fcf-a367-e7f925416456","8699fb7e-844c-4fcd-b212-7a5ac8f5303e", "0fb4ac09-b5df-47a0-a95b-566e31940f04","af901bb2-f867-4d7e-a938-06e0d66639c6", "277c57bf-d5b8-4a69-941f-0f494c30d99e", "b08931d4-1c51-42df-96b6-aef74900873a", "b08931d4-1c51-42df-96b6-aef74900873a", "96cd3d5d-590a-4567-9cc3-787e03cc5140"],
+        "liberalArtsElectives": ["b125dfce-929a-48ce-9fc8-17f6febd9a2f", "8b489db0-d7a8-44f8-9cae-e3f15d9a258f", "542433a9-cc0e-4d8c-8038-c5d3179c2d64"],
+        "foundationalCourses": [ "c30f5f36-fc9c-49d4-b5c4-baec9cc82194",  "a014f77a-2ac5-4f22-87d7-f0ab623dce64","f4b55e57-6034-4462-81ca-13c559697988",  "274f0d39-2889-48c6-8bef-ec460e958414"],
+        "lowerDivisionComputing":[ "57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6" ,"3cca9c4e-a195-4759-a761-cfe09adb20b8", "cecc9003-5bf5-4d17-b01d-895f24ea03a2", "f9bc9ca2-9fe9-43eb-8444-2f0fc53da6c3","9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23","39046cda-f913-4f9b-a002-f06e7c59f235",  "730005f1-113d-446e-865c-31b46dfbc924"],
+        "bussinessInformationManagement":[ "93c533e9-b50e-4557-b4da-9f31c0b4b839", "554472ab-c7cb-4ac6-bf69-0d8b58a99d3d", "01f15c99-15af-4569-8cf0-4fe263053ed8", "377ddfb9-de27-4996-8f72-c86999f08c03", "6390e71f-3219-4036-8347-5f8545de9a32", "95e7009a-e959-4a3d-a546-293748d5d4f0"],
+        "electives":["b165928f-3a05-49dd-ba22-95c2292c42ec", "a6e22db3-c52f-487e-b970-5c783881fe73"]
+    },
+    {
+        "roadmapID":"4480a8a7-e288-46dd-8efd-4110c7ca8f9f",
+        "major":"CE",
+        "majorClasses":[ "684f6d78-9f42-4e22-b447-7b15782007b3", "bab69897-7cbf-4acd-839e-cec82daa1cd0", "6c8202fd-b31b-4647-b551-b7f4dbf007a0", "f16c3f7d-4f83-4a11-8b47-632572514136",  "42288ffd-4ead-4718-b840-4be2894d8f30","e42dff40-7a9e-43ae-b574-76dd1182143a", "f425f91f-92da-4261-be45-347d81b6ab9d", "a87ed298-b059-48ae-8b45-cb91e4c376e6"],
+        "carolinaCore":["12224407-e656-4fe7-9078-88f1d9dc8325",  "980e1056-4ed2-4459-b0e7-56d78eca5d73","4bd274cb-260e-47a5-9893-203a3943d704","3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6", "a379a182-57c9-4b28-950d-35903009bce3",  "b6bf4208-6933-4e10-a961-118f12d7acba","66a95212-0d75-4fae-97ff-c3c76c29d47e", "75764c82-d463-4fcf-a367-e7f925416456","8699fb7e-844c-4fcd-b212-7a5ac8f5303e",  "af901bb2-f867-4d7e-a938-06e0d66639c6",  "0fb4ac09-b5df-47a0-a95b-566e31940f04",  "277c57bf-d5b8-4a69-941f-0f494c30d99e","b08931d4-1c51-42df-96b6-aef74900873a", "96cd3d5d-590a-4567-9cc3-787e03cc5140"],
+        "liberalArtsElectives": ["b125dfce-929a-48ce-9fc8-17f6febd9a2f", "8b489db0-d7a8-44f8-9cae-e3f15d9a258f", "542433a9-cc0e-4d8c-8038-c5d3179c2d64"],
+        "foundationalCourses": [ "f8b358bf-d69e-4aae-b10c-8dc98f1f651f", "2e0285db-981b-4204-87b8-04aa7fab7ed3", "12b2ee6d-d2c5-47fb-93de-08b5950ea2ae","944f3d4d-9424-48c0-840e-18a79e18e00b", "928eb174-dea9-4b98-80b1-ac594c4360f8","a9f73275-ae03-4859-b101-4ebfeafa7a5a","9230a9d3-b020-4a93-9f9c-ea8a8204130e","f4b55e57-6034-4462-81ca-13c559697988","c30f5f36-fc9c-49d4-b5c4-baec9cc82194"],
+        "lowerDivisionComputing":["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627","57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6" ,"3cca9c4e-a195-4759-a761-cfe09adb20b8", "789c6ed0-53e3-476c-8761-f08bf727d08c", "dd218911-2c00-46b4-99fc-0aa909331369", "9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23","39046cda-f913-4f9b-a002-f06e7c59f235","7ff23b34-bdcf-498d-8314-1d510bc8ffef"],
+        "electricalEngineering": [ "6ee0688a-c26f-4cac-ba78-e1fd9ced6f1c",  "0531799f-492d-4482-98a8-0e5b913a3472", "c055ccc9-3200-476a-83c6-01040cc7ddee", "54a18c11-26e8-45bf-bd71-7e78efbf6eac"],
+        "electives":["d71f3a41-5b83-40b6-94a7-609b01ca2caa", "dcf88287-b888-4fe0-949f-1b2ecd8af011", "d5702212-9e45-497b-bb74-d78bb9a5f9e1", "de747cdf-8019-4d39-bebc-278236f3d700"]
+    }
+]

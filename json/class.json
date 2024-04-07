@@ -1,0 +1,1384 @@
+[
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "101" ,
+        "courseTitle" : "Introduction to Computer Concepts",
+        "courseID":"0ee3fc1c-ec19-4637-aeb5-614577b6d22f" ,
+        "credits": 3 ,
+        "applicationArea": "Robotics",
+        "prerequisites" : [],
+        "description": "History, application, and social impact of computers; problem-solving, algorithm development, applications software, and programming in a procedural language.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "102" ,
+        "courseTitle" :  "General Applications Programming",
+        "courseID": "ceb7cd60-abcc-4bc1-a3b1-a30b81a824cd",
+        "credits": 3,
+        "applicationArea": "Science",
+        "prerequisites" :  [],
+        "description": "Introduction to systematic computer problem-solving and programming for a variety of applications.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :"CSCE"  ,
+        "courseNumber" : "145" ,
+        "courseTitle" :  "Algorithmic Design I",
+        "courseID": "2e2ebf3f-c4d3-4dae-956b-d8afa7fca627",
+        "credits": 4 ,
+        "applicationArea": "",
+        "prerequisites" :["669e88d5-9009-4f74-85aa-e675ffaaaf12"],
+        "description": "Problem-solving, algorithmic design, and programming. Three lectures and two laboratory hours per week.   FS: 12/04/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "146",
+        "courseTitle" :   "Algorithmic Design II",
+        "courseID":  "57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6" ,
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627"] ,
+        "description":   "Continuation of CSCE 145. Rigorous development of algorithms and computer programs; elementary data structures. Three lecture hours and two laboratory hours per week.   FS: 12/04/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "190" ,
+        "courseTitle" : "Computing in the Modern World",
+        "courseID": "3cca9c4e-a195-4759-a761-cfe09adb20b8",
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" : [] ,
+        "description":  "An introduction to the field of computing: trends in computing technology, the profession, and careers; subdisciplines in computing; the nature of research and development.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE",
+        "courseNumber" : "201" ,
+        "courseTitle" :  "Introduction to Computer Security",
+        "courseID": "cecc9003-5bf5-4d17-b01d-895f24ea03a2",
+        "credits": 3 ,
+        "applicationArea": "Robotics" ,
+        "prerequisites" : ["0ee3fc1c-ec19-4637-aeb5-614577b6d22f"], 
+        "description":  "Introduction to the theory and practice of computer security, including security policies, authentification, digital certificates, firewalls, malicious code, legal and ethical issues, and incident handling.   FS:  4/5/2017.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" : "205" ,
+        "courseTitle" :   "Business Applications Programming",
+        "courseID": "9583ee33-5e0b-43fe-9bc7-7ef3816da225",
+        "credits": 3,
+        "applicationArea": "Robotics" ,
+        "prerequisites" :   ["377ddfb9-de27-4996-8f72-c86999f08c03"],
+        "description": "Introduction to computer applications in business. Programming exercises in COBOL.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE",
+        "courseNumber" : "205" ,
+        "courseTitle" :   "Business Applications Programming",
+        "courseID":  "9583ee33-5e0b-43fe-9bc7-7ef3816da225",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["377ddfb9-de27-4996-8f72-c86999f08c03"], 
+        "description": "Introduction to computer applications in business. Programming exercises in COBOL.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" : "207" ,
+        "courseTitle" :   "UNIX System Administration",
+        "courseID": "65e390e4-6e40-464f-a5b2-05a27cce7111",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627"],
+        "description":  "The Unix programming environment: I/O programming, Unix processes, fork, exec, pipes and signals, and tools.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :"CSCE",
+        "courseNumber" : "209" ,
+        "courseTitle" :"Special Topics in Computer Programming" ,
+        "courseID": "5077b5da-19b2-45d5-860e-a62fc9ae2def",
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" : [] ,
+        "description": "Programming and application development using selected programming languages. Course content varies and will be announced in the schedule of classes by title."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" : "210" ,
+        "courseTitle" :  "Computer Hardware Foundations",
+        "courseID": "f9bc9ca2-9fe9-43eb-8444-2f0fc53da6c3",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627"],
+        "description": "Number representation, data formats, CPU and memory organization, assembly language, I/O and peripherals, computer networks. Students may not apply both CSCE 210 and CSCE 212 to any minor or major program of study.   FS: 11/04/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :"CSCE",
+        "courseNumber" : "211" ,
+        "courseTitle" :  "Digital Logic Design",
+        "courseID": "789c6ed0-53e3-476c-8761-f08bf727d08c",
+        "credits": 3,
+        "applicationArea": "Robotics" ,
+        "prerequisites" :   ["4bd274cb-260e-47a5-9893-203a3943d704"],
+        "description": "Number systems, Boolean algebra, logic design, sequential machines.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "212" ,
+        "courseTitle" :  "Introduction to Computer Architecture",
+        "courseID": "dd218911-2c00-46b4-99fc-0aa909331369",
+        "credits": 3,
+        "applicationArea": "Robotics" ,
+        "prerequisites" : [] ,
+        "description": "Computer architecture, components. and organization; memory addressing; Input/Output; instruction sets; interrupts; assembly-language programming. Students may not apply both CSCE 210 and CSCE 212 to any minor or major program of study.   FS: 11/04/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" :  "215",
+        "courseTitle" : "UNIX/Linux Fundamentals" ,
+        "courseID": "9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23",
+        "credits":1 ,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627"],
+        "description": "UNIX operating system, user-level system commands, and programming tools. UNIX scripting languages.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "240",
+        "courseTitle" :  "Advanced Programming Techniques",
+        "courseID":"39046cda-f913-4f9b-a002-f06e7c59f235",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" : ["9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23"] ,
+        "description":  "Pointers; memory management; advanced programming language structures: operator overloading, iterators, multiple inheritance, polymorphism, templates, virtual functions; Unix programming environment.   FS: 12/6/2017.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" :  "242",
+        "courseTitle" :  "Client-Server Computing",
+        "courseID":  "e4c7001a-fadb-481d-b4e6-162dfa25744c",
+        "credits": 3,
+        "applicationArea": "Robotics" ,
+        "prerequisites" : ["57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6"] ,
+        "description": "Web technologies to support client-server computing. Implementation of client-server applications.   FS: 12/07/2022."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "245" ,
+        "courseTitle" : "Object-Oriented Programming Techniques" ,
+        "courseID": "d00df7d5-0c9d-4c63-9ea0-338e5e586cd7",
+        "credits":3 ,
+        "applicationArea": "Robotics" ,
+        "prerequisites" :   ["57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6"] ,
+        "description": "Advanced object-oriented concepts and techniques; multiple inheritance; memory management; operator overloading; polymorphism; performance issues.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "274"  ,
+        "courseTitle" :  "Robotic Applications and Design" ,
+        "courseID": "7ff23b34-bdcf-498d-8314-1d510bc8ffef",
+        "credits":3 ,
+        "applicationArea": "Robotics",
+        "prerequisites" : [ ],
+        "description": "Design and control of robots. Interactions between robots, sensing, actuation, and computation.   FS: 04/03/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :"CSCE"  ,
+        "courseNumber" : "304" ,
+        "courseTitle" :  "Applied Problem Solving and Programming" ,
+        "courseID": "3891a8b1-6cef-40a9-a20d-966f2dd9df9d",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["0ac7ca78-5ead-4438-ba85-3e0259eed7a8"],
+        "description": "Systematic problem definition, solution formulation, and computer implementation for business and related areas. Internet and database applications. Programming exercises in a high-level programming language."
+    },
+    {
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "311" ,
+        "courseTitle" :  "Operating Systems" ,
+        "courseID": "684f6d78-9f42-4e22-b447-7b15782007b3",
+        "credits": 3,
+        "applicationArea": "Robotics" ,
+        "prerequisites" : ["39046cda-f913-4f9b-a002-f06e7c59f235"] ,
+        "description": "Operating system structure and function; process implementation, scheduling, and synchronization; memory management; security; naming protection; resource allocation; network file systems.   FS:  12/02/2015.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :"CSCE",
+        "courseNumber" : "317" ,
+        "courseTitle" :  "Computer Systems Engineering" ,
+        "courseID": "c92f728c-76a7-4cf4-a220-8d41d5468014",
+        "credits": 3 ,
+        "applicationArea": "Robotics",
+        "prerequisites" : ["dd218911-2c00-46b4-99fc-0aa909331369"] ,
+        "description": "System-level modeling and evaluation of computer systems: requirements elicitation and specification, architectural design, reliability and performance evaluation, Markov modeling, life-cycle cost analysis, project management.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" : "330" ,
+        "courseTitle" :  "Programming Language Structures",
+        "courseID": "d71f3a41-5b83-40b6-94a7-609b01ca2caa",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" : ["39046cda-f913-4f9b-a002-f06e7c59f235"] ,
+        "description": "Formal specification of syntax and semantics; structure of algorithms; list processing and string manipulation languages; statement types, control structures, and interfacing procedures.   FS: 09/14/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "355",
+        "courseTitle" : "Foundations of Computation", 
+        "courseID": "dcf88287-b888-4fe0-949f-1b2ecd8af011",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["789c6ed0-53e3-476c-8761-f08bf727d08c"],
+        "description": "Basic theoretical principles of computing as modeled by formal languages, grammars, automata, and Turing machines; fundamental limits of computation.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "390",
+        "courseTitle" :  "Professional Issues in Computer Science and Engineering",
+        "courseID": "96cd3d5d-590a-4567-9cc3-787e03cc5140",
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description": "Professional issues in the information technology professions; history and social context of computing; professional responsibilities; privacy; intellectual property; risks and liabilities of computer-based systems.   FS: 04/02/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "415",
+        "courseTitle" :  "Mainframe Systems", 
+        "courseID":  "a75825a3-3324-40a6-b5e4-d9b50114d26d",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["522c796e-521f-4fc9-81e7-999a1fd619c2"],
+        "description": "Introduction to the large scale computer systems used by businesses to support thousands of simultaneous users and process millions of transactions.    FS: 4/4/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "416",
+        "courseTitle" :   "Introduction to Computer Networks",
+        "courseID":  "f16c3f7d-4f83-4a11-8b47-632572514136",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6"],
+        "description": "Concepts and components of computer networks and the Internet; network applications; network protocol stack.   FS: 10/5/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "490",
+        "courseTitle" :   "Capstone Computing Project I",
+        "courseID": "42288ffd-4ead-4718-b840-4be2894d8f30",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Major team-based software design project to be undertaken in a student’s final year of study; project planning, software requirements analysis, design, and specification. Written reports and oral presentations in a technical setting.   FS: 09/09/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "491",
+        "courseTitle" :  "Capstone Computer Engineering Project",
+        "courseID":  "e42dff40-7a9e-43ae-b574-76dd1182143a",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Advanced computer systems engineering. Team projects. Written reports and oral presentations in a technical setting.   FS: 11/05/2019.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "492",
+        "courseTitle" :  "Capstone Computing Project II",
+        "courseID":  "f425f91f-92da-4261-be45-347d81b6ab9d",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Continuation of CSCE 490. Computer system implementation, testing, verification and validation of results. Written reports and oral presentations in a technical setting.   FS: 12/07/2022."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "498",
+        "courseTitle" :   "Independent Study",
+        "courseID":  "cb105d44-93e4-4549-b015-c743a17c6ea4",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description": "Individual investigation or study of special topics. At most three credits may be applied toward a degree.  Approval of project proposal by instructor and department advisor.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "500",
+        "courseTitle" :   "Computer Programming and Applications",
+        "courseID":  "6b2b4f06-e88d-433b-a9d4-b8d17098babd",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description": "Concepts and properties of algorithms; programming exercises with emphasis on good programming habits.  Credit may not be received for both CSCE 500 and CSCE 145. Open to all majors. May not be used for major credit by computer science and engineering majors.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "510",
+        "courseTitle" :   "System Programming",
+        "courseID":  "ee329944-4e02-4603-9eec-3ec5c2db9381",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23"],
+        "description": "System software such as command language interpreters, client-server applications, debuggers; mail systems, browsers, macroprocessors, and revision control systems; file systems, processes, threads, and interprocess communication.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "512",
+        "courseTitle" :  "System Performance Evaluation", 
+        "courseID":  "2507be35-bc2b-4f1a-a4a6-3839f81e6f08",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["684f6d78-9f42-4e22-b447-7b15782007b3"],
+        "description":  "Measuring, modeling, analyzing, and predicting performance of computer systems and networks; bottleneck analysis; Markovian queuing systems and networks; use of operational and probabilistic models.   FS: 12/04/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" : "513", 
+        "courseTitle" :  "Computer Architecture",
+        "courseID": "8a1b67dc-1746-4e14-ba41-5be701bb4d4e",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["789c6ed0-53e3-476c-8761-f08bf727d08c"],
+        "description":  "Design methodology; processor design; computer arithmetic: algorithms for addition, multiplication, floating point arithmetic; microprogrammed control; memory organization; introduction to parallel architectures.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "515",
+        "courseTitle" :   "Computer Network Programming",
+        "courseID": "4e8f9533-2b4a-4592-912b-a3177bf357e0",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["684f6d78-9f42-4e22-b447-7b15782007b3"],
+        "description": "Computer networks and communication protocols; socket programming; interprocess communication; development of network software; case studies.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE", 
+        "courseNumber" :   "516",
+        "courseTitle" :   "Computer Networks",
+        "courseID":   "2a7efa55-7249-495b-a47e-f497f64dbf0c",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["f4b55e57-6034-4462-81ca-13c559697988"],
+        "description":  "Structure, design, and analysis of computer networks; ISO/OSI network architecture.   FS: 12/04/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "517",
+        "courseTitle" :  "Computer Crime and Forensics",
+        "courseID": "f5a467c9-8fe7-4654-b43f-dec8146fc6bc",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :   ["9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23"],
+        "description":  "Structure, design, and analysis of computer networks; ISO/OSI network architecture.   FS: 12/07/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "518",
+        "courseTitle" :    "Ethical Hacking",
+        "courseID":    "a384fb19-6516-41f7-aa3f-673cfd89ddb6",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :    ["9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23"],
+        "description": "Fundamental principles and techniques of ethical hacking, including penetration testing life cycle, planning and scoping, identifying targets and goals, active and passive reconnaissance, enumeration and scanning, exploitation, post-exploitation, and results reporting.   FS: 12/07/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "520",
+        "courseTitle" :  "Database System Design",
+        "courseID": "86229990-45b3-48e6-b444-0b9db99e8a8c",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" : ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "Database management systems; database design and implementation; security, integrity, and privacy.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "522",
+        "courseTitle" :   "Information Security Principles",
+        "courseID": "5dfb6a47-ff2c-4977-ab64-588da4f687a4",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6"],
+        "description": "Threats to information resources and appropriate countermeasures. Cryptography, identification and authentication, access control models and mechanisms, multilevel database security, steganography, Internet security, and intrusion detection and prevention.   FS: 09/14/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE", 
+        "courseNumber" :  "526",
+        "courseTitle" :  "Service Oriented Computing",
+        "courseID": "7721a8b5-3d92-4dfa-9629-be1f33360abb",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["684f6d78-9f42-4e22-b447-7b15782007b3"],
+        "description":  "Cooperative information systems and service-oriented computing. Techniques for achieving coordinated behavior among a decentralized group of information system components. Distributed databases, multiagent systems, conceptual modeling, Web services, and applications.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE", 
+        "courseNumber" :  "531",
+        "courseTitle" :   "Compiler Construction",
+        "courseID":  "59c1c127-56d9-48ac-9e64-8e190e42d1d2",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "Techniques for design and implementation of compilers, including lexical analysis, parsing, syntax-directed translation, and symbol table management.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE",
+        "courseNumber" :  "546",
+        "courseTitle" :  "Mobile Application Development",
+        "courseID":  "a2743890-b045-42e6-ad7b-67fb99afc730",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "Development of mobile applications, including user interface design for mobile, local and cloud data storage techniques, and application architectures.   FS: 11/2/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE", 
+        "courseNumber" :  "547", 
+        "courseTitle" :   "Windows Programming",
+        "courseID": "4c19bf14-190d-446d-9074-663573e83bf1",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Object-oriented methods and tools for application programming with graphically interactive operating systems.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "548",
+        "courseTitle" :  "Building Secure Software",
+        "courseID":  "91affebc-b428-4a2b-859e-392989147420",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Construction of software systems resistant to vulnerabilities and attacks. Cryptographic tools. Language, operating system, and network security. Case studies. Development of best practices through programming assignments.   FS: 09/14/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "551",
+        "courseTitle" :   "Theory of Computation",
+        "courseID": "5b0d8819-6c2c-435d-89f5-1ce3d944a085",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [  "6c8202fd-b31b-4647-b551-b7f4dbf007a0"],
+        "description": "Basic theoretical principles of computing as modeled by formal languages and automata; computability and computational complexity   FS: 12/05/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "552",
+        "courseTitle" :   "Computer Game Development",
+        "courseID":  "1e246c44-0c84-487a-acc9-d9fe5fb55ff1",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "Design and development of computer games, with emphasis on the technologies used. Hands-on development of computer games.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "555",
+        "courseTitle" :  "Algorithms in Bioinformatics",
+        "courseID": "2dee8c91-3392-4a97-ac8d-bf4effe45e15",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "6c8202fd-b31b-4647-b551-b7f4dbf007a0"],
+        "description": "Concepts, algorithms and tools for important problems in Bioinformatics, including nucleotide and amino acid sequence alignment, DNA fragment assembly, phylogenetic reconstruction, and protein structure visualization and assessment.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "556",
+        "courseTitle" :  "Data Analysis in Python: Application to Neuroscience",
+        "courseID":  "f97adcff-bebf-4e87-a9dc-4bc05e2534dd",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Hands-on introduction in Python to the analysis of neuroscience data (human neuroimaging and cellular electrophysiology), including various aspects such as data wrangling, statistics, classification, and visualization.   FS: 12/07/2022."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "557",
+        "courseTitle" :   "Introduction to Cryptography",
+        "courseID":  "039282d5-a943-40b4-b916-a984220b062d",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":  "Design of secret codes for secure communication, including encryption and integrity verification: ciphers, cryptographic hashing, and public key cryptosystems such as RSA. Mathematical principles underlying encryption. Code-breaking techniques. Cryptographic protocols.   FS: 12/05/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE",
+        "courseNumber" :  "561",
+        "courseTitle" :   "Numerical Analysis",
+        "courseID":  "ed4e342b-3ba4-4391-b1be-c01d6b092138",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":  "Interpolation and approximation of functions; solution of algebraic equations; numerical differentiation and integration; numerical solutions of ordinary differential equations and boundary value problems; computer implementation of algorithms.   FS: 12/05/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "563",
+        "courseTitle" :  "Systems Simulation", 
+        "courseID": "45f32842-f132-4be1-a0a5-6daf9495dd8f",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "Computer simulation of real systems; principles of system organization; random number generation; programming exercises in a simulation language.   FS: 12/04/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE",
+        "courseNumber" : "564", 
+        "courseTitle" :   "Computational Science",
+        "courseID":  "a3964dcb-91fc-4035-9921-e581a0b4edab",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "8eb88808-590a-46c2-9177-bfeaf1a08cb3"],
+        "description": "Parallel algorithms; scientific visualization; techniques for solving scientific problems.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "565",
+        "courseTitle" :   "Introduction to Computer Graphics",
+        "courseID": "a56ea16c-c9c2-4b72-9496-905f66aa5c45",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description": "Graphics hardware; graphics primitives; two-dimensional and three-dimensional viewing; basic modeling.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "567",
+        "courseTitle" :  "Visualization Tools",
+        "courseID":  "51c7033b-3ac8-4c19-8268-7cf21d62f70e",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["2e2ebf3f-c4d3-4dae-956b-d8afa7fca627"],
+        "description":  "Scientific visualization tools as applied to sampled and generated data; methods for data manipulation and representation; investigation of visualization techniques.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "569",
+        "courseTitle" :  "Parallel Computing",
+        "courseID":  "69227539-fd7b-49d7-a763-001f5d13f3e9",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "8eb88808-590a-46c2-9177-bfeaf1a08cb3"],
+        "description": "Architecture and interconnection of parallel computers; parallel programming models and applications; issues in high-performance computing; programming of parallel computers.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "571",
+        "courseTitle" :   "Critical Interactives",
+        "courseID":  "2e2ffa8b-6ea7-466d-9832-e228190d652d",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":  "Foundational techniques in multidisciplinary software development, specifically of applications designed to present sensitive, sometimes controversial, materials in ways to engender empathic awareness of the interactor.      FS: 11/01/2017.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "572",
+        "courseTitle" :   "Human-Computer Interaction",
+        "courseID":  "4f75c6f9-113d-42ae-ba80-40b95ab70c09",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description": "Interdisciplinary approach to interaction design, user-centered design, human abilities, survey development, experimental study methodology, heuristic evaluations, usability testing, universal design, and accessibility.   FS: 10/5/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "574",
+        "courseTitle" :    "Robotics",
+        "courseID":  "9ca16a4a-bf04-488c-a7b7-83699aa46cee",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "789c6ed0-53e3-476c-8761-f08bf727d08c"],
+        "description": "Design and application of robotic systems; emphasis on mobile robots and intelligent machines.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "578",
+        "courseTitle" :"Text Processing",
+        "courseID":   "15971dff-0b1b-4db0-af58-e70e230d6a65",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["0b6801a1-227f-4ac7-8505-36d29f8954a4"],
+        "description":  "Text and natural language processing; formal models and data structures appropriate for text processing; selected topics in computational linguistics, stylistics, and content analysis.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "580",
+        "courseTitle" :   "Artificial Intelligence", 
+        "courseID":  "8e63a870-d35b-4970-b62a-c0274d8a6d97", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "6c8202fd-b31b-4647-b551-b7f4dbf007a0"],
+        "description":   "Heuristic problem solving, theorem proving, and knowledge representation, including the use of appropriate programming languages and tools.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "581",
+        "courseTitle" :   "Trusted Artificial Intelligence", 
+        "courseID":   "764a7465-c5ab-4e29-96cc-ba9ac0f1dc7d",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "AI Trust – responsible/ethical technology, fairness/ lack of bias, explanations (XAI), machine learning, reasoning, software testing, data quality and provenance, tools and projects.   FS: 02/01/2023." 
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "582",
+        "courseTitle" :    "Bayesian Networks and Decision Graphs",
+        "courseID":    "2fc5f2c0-ded9-4307-bbbe-98866c54dfe0",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "6c8202fd-b31b-4647-b551-b7f4dbf007a0"],
+        "description":  "Normative approaches to uncertainty in artificial intelligence. Probabilistic and causal modeling with Bayesian networks and influence diagrams. Applications in decision analysis and support. Algorithms for probability update in graphical models.   FS: 12/05/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "585",
+        "courseTitle" :  "Machine Learning Systems",  
+        "courseID":   "10d7199c-1ac2-4c6b-92b5-985c0be4f829",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":  "Design and implementation of machine learning systems, Deep learning systems stack, machine learning platforms, scalable and distributed machine learning.   FS: 12/04/2019.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "587",
+        "courseTitle" : "Big Data Analytics",   
+        "courseID":   "b447804a-971b-4d1c-86f4-ea6da7802804",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["f4b55e57-6034-4462-81ca-13c559697988"],
+        "description":  "Foundational techniques and tools required for data science and big data analytics.  Concepts, principles, and techniques applicable to any technology and industry for establishing a baseline that can be enhanced by future study.   FS: 12/03/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "590",
+        "courseTitle" :    "Topics in Information Technology", 
+        "courseID":   "6eec1cf0-2635-45cb-9e15-04593e046677",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":  "Reading and research on selected topics in information technology. Course content varies and will be announced in the schedule of courses by title. May be repeated for credit as topics vary.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "594",
+        "courseTitle" :     "Strategic Management of Information Systems",
+        "courseID":   "fdf13bc5-f270-4c26-a749-720a50d0b00a",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Strategic management and use of information systems in organizations.   FS: 12/05/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "611",
+        "courseTitle" :    "Advanced Digital Design", 
+        "courseID":   "a87ed298-b059-48ae-8b45-cb91e4c376e6",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Design techniques for logic systems; emphasis on higher-level CAD tools such as hardware description languages and functional modeling.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "612",
+        "courseTitle" :   "VLSI System Design", 
+        "courseID":    "3fedddb2-e403-4780-8bda-83569391dfae",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description": "VLSI design process models, introduction to EDA tools, HDL modeling and simulation, logic synthesis and simulation, benchmark design projects.   CL: 2020." 
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "613",
+        "courseTitle" :   "Fundamentals of VLSI Chip Design",
+        "courseID":   "165ac581-71d1-4255-80f2-2d0df98bfde7",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["b1725f68-ee26-44c8-9f2b-044abfeb9a0f"],
+        "description":  "Design of VLSI circuits, including standard processes, circuit design, layout, and CAD tools. Lecture and guided design projects."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "750",
+        "courseTitle" :  "Analysis of Algorithms",  
+        "courseID":   "4e774612-c55d-4d53-afdc-66556b64265e",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "6c8202fd-b31b-4647-b551-b7f4dbf007a0"],
+        "description":   "Algorithm design techniques; algorithms and data structures for sets and graphs; time and space complexity; sorting and searching; NP-complete problems.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "774",
+        "courseTitle" :     "Robotics Systems",
+        "courseID":   "d9dc6c36-b50a-4288-b4d8-15d37a6fec6e",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "9ca16a4a-bf04-488c-a7b7-83699aa46cee"],
+        "description":   "Design and operation of robot systems; dynamics, control, and motion trajectories of manipulators; visual, auditory, and tactile sensing systems; planning and learning.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "790",
+        "courseTitle" :   "Topics in Information Technology", 
+        "courseID":    "b89bc61c-6551-4b54-8df1-9241691da0b8",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":  "Reading and research on selected topics in information technology. Course content varies and will be announced in the schedule of courses by title. May be repeated for credit as topics vary.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "141",
+        "courseTitle" :  "Calculus I",   
+        "courseID": "4bd274cb-260e-47a5-9893-203a3943d704",
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "2f85f19f-f6ba-490f-9bb2-a41b9199d74f"],
+        "description":   "Functions, limits, derivatives, introduction to integrals, the Fundamental Theorem of Calculus, applications of derivatives and integrals. Four classroom hours and one laboratory hour per week.    CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "142",
+        "courseTitle" :  "Calculus II",   
+        "courseID":    "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6",
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "4bd274cb-260e-47a5-9893-203a3943d704"],
+        "description":   "Methods of integration, sequences and series, approximations.   Four classroom hours and one laboratory hour per week.   FS: 12/03/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "374",
+        "courseTitle" :      "Discrete Structures",
+        "courseID":    "928eb174-dea9-4b98-80b1-ac594c4360f8",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6"],
+        "description":  "Propositional and predicate logic; proof techniques; recursion and recurrence relations; sets, combinatorics, and probability; functions, relations, and matrices; algebraic structures.   FS: 12/03/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "241",
+        "courseTitle" :  "Vector Calculus",  
+        "courseID":   "f8b358bf-d69e-4aae-b10c-8dc98f1f651f",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6"],
+        "description":  "Vector algebra, geometry of three-dimensional space; lines, planes, and curves in space; polar, cylindrical, and spherical coordinate systems; partial differentiation, max-min theory; multiple and iterated integration, line integrals, and Green’s theorem in the plane.   FS: 12/03/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "344",
+        "courseTitle" :    "Applied Linear Algebra",
+        "courseID":    "12b2ee6d-d2c5-47fb-93de-08b5950ea2ae",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6"],
+        "description":  "General solutions of systems of linear equations, vector spaces and subspaces, linear transformations, determinants, orthogonality, characteristic polynomials, eigenvalues and eigenvectors, singular value decomposition, and generalized inverse.  MATH 344L is an optional laboratory course where additional applications will be discussed.   FS: 12/03/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "344L",
+        "courseTitle" :   "Applied Linear Algebra Lab", 
+        "courseID":     "944f3d4d-9424-48c0-840e-18a79e18e00b",
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "12b2ee6d-d2c5-47fb-93de-08b5950ea2ae"],
+        "description":  "Computer based applications of linear algebra for science and engineering students. Topics include numerical analysis of matrices, direct and indirect methods for solving linear systems, and least squares method (regression). Typical applications include practical issues related to discrete Markov processes, image compression, and linear programming.   FS: 06/01/2022."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "242",
+        "courseTitle" :     "Elementary Differential Equations",
+        "courseID":     "2e0285db-981b-4204-87b8-04aa7fab7ed3",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6"],
+        "description":   "Ordinary differential equations of first order, higher order linear equations, Laplace transform methods, series methods; numerical solution of differential equations. Applications to physical sciences and engineering.   FS: 12/03/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ENGL",
+        "courseNumber" :  "101",
+        "courseTitle" :  "Critical Reading and Composition",   
+        "courseID":    "12224407-e656-4fe7-9078-88f1d9dc8325",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Instruction in strategies for critically reading and analyzing literature and non-literary texts; structured, sustained practice in composing expository and analytical essays.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ENGL",
+        "courseNumber" :  "102",
+        "courseTitle" :    "Rhetoric and Composition",  
+        "courseID":    "980e1056-4ed2-4459-b0e7-56d78eca5d73",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Instruction and intensive practice in researching, analyzing, and composing written arguments about academic and public issues.   FS: 12/7/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ENGL",
+        "courseNumber" :  "463",
+        "courseTitle" :     "Business Writing",
+        "courseID":    "c30f5f36-fc9c-49d4-b5c4-baec9cc82194",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "12224407-e656-4fe7-9078-88f1d9dc8325"],
+        "description":   "Extensive practice in different types of business writing, from brief letters to formal articles and reports.   FS: 06/06/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ENGL",
+        "courseNumber" :  "462",
+        "courseTitle" :     "Technical Writing",
+        "courseID": "7100ca89-33cf-40da-acbe-84af49e92c3c",   
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "12224407-e656-4fe7-9078-88f1d9dc8325"],
+        "description":  "Preparation for and practice in types of writing important to scientists, engineers, and computer scientists, from brief technical letters to formal articles and reports.   FS: 06/06/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "174",
+        "courseTitle" :    "Discrete Mathematics for Computer Science",
+        "courseID":     "a014f77a-2ac5-4f22-87d7-f0ab623dce64",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "84b21549-16e9-4117-978c-39a43fb665b2"],
+        "description":   "Logic, number theory, sequences, series, recursion, mathematical induction, set theory, enumeration, functions, relations, graphs and trees. Connections to computers and to programming are emphasized when possible.   FS: 11/04/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CHEM",
+        "courseNumber" :  "111",
+        "courseTitle" :    "General Chemistry I", 
+        "courseID":    "a379a182-57c9-4b28-950d-35903009bce3",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [  "669e88d5-9009-4f74-85aa-e675ffaaaf12"],
+        "description":  "Survey of the principles that underlie all chemistry with applications illustrating these principles.  Three lecture and one recitation hours per week.   FS: 12/02/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CHEM",
+        "courseNumber" :  "111L",
+        "courseTitle" :      "General Chemistry I Lab",
+        "courseID":     "b6bf4208-6933-4e10-a961-118f12d7acba",
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "669e88d5-9009-4f74-85aa-e675ffaaaf12"],
+        "description":  "Introduction to the principles and techniques of experimental chemistry with emphasis on formula investigations, equations, elementary statistics, and chemical reactivity.   FS: 12/02/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CHEM",
+        "courseNumber" :  "112",
+        "courseTitle" :     "General Chemistry II",
+        "courseID":     "66a95212-0d75-4fae-97ff-c3c76c29d47e",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Continuation of CHEM 111. Special emphasis on chemical equilibrium. Three lecture and one recitation hours per week.   FS: 12/07/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "PHYS",
+        "courseNumber" :   "211",
+        "courseTitle" :      "Essentials of Physics I",
+        "courseID": "b35fcab4-a5d5-470a-855a-2f7a276f1d2e",    
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Classical mechanics and wave motion. Calculus-level course for students of science and engineering.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "PHYS",
+        "courseNumber" :  "211L",
+        "courseTitle" :     "Essentials of Physics I Lab", 
+        "courseID":      "8b52945b-8079-4906-8e35-500bdd72cb8f",
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "b35fcab4-a5d5-470a-855a-2f7a276f1d2e"],
+        "description":   "Experiments, exercises, and demonstrations to accompany PHYS 211.   FS: 09/08/2021."
+    },
+    {
+        "courseSubjectCode" :  "PHYS",
+        "courseNumber" :  "212",
+        "courseTitle" :    "Essentials of Physics II",  
+        "courseID":   "a9f73275-ae03-4859-b101-4ebfeafa7a5a",   
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "b35fcab4-a5d5-470a-855a-2f7a276f1d2e"],
+        "description":   "Classical electromagnetism and optics.   FS: 12/02/2020.   CL: 2020." 
+    },
+    {
+        "courseSubjectCode" :  "PHYS",
+        "courseNumber" :  "212L",
+        "courseTitle" :  "Essentials of Physics II Lab",    
+        "courseID":    "9230a9d3-b020-4a93-9f9c-ea8a8204130e", 
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "a9f73275-ae03-4859-b101-4ebfeafa7a5a"],
+        "description":   "Experiments, exercises, and demonstrations to accompany PHYS 212.   FS: 09/08/2021." 
+    },
+    {
+        "courseSubjectCode" :  "STAT",
+        "courseNumber" :  "509",
+        "courseTitle" :    "Statistics for Engineers",  
+        "courseID":   "f4b55e57-6034-4462-81ca-13c559697988",  
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6"],
+        "description":   "Basic probability and statistics with applications and examples in engineering. Elementary probability, random variables and their distribution, random processes, statistical inference, linear regression, correlation and basic design of experiments with application to quality assurance, reliability, and life testing. May not be taken concurrently with or after STAT 513, STAT 515, or STAT 516. Not for C.A.S., M.A.S., or Ph.D credit in Statistics.    FS: 12/02/2015.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ELCT",
+        "courseNumber" :  "102",
+        "courseTitle" :     "Electrical Science", 
+        "courseID":     "6ee0688a-c26f-4cac-ba78-e1fd9ced6f1c", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "4bd274cb-260e-47a5-9893-203a3943d704"],
+        "description":   "Fundamentals of electrical and electronic components. Basic network laws. Mathematical and computer tools for network analysis. "
+    },
+    {
+        "courseSubjectCode" :  "ELCT",
+        "courseNumber" :  "221",
+        "courseTitle" :  "Circuits",    
+        "courseID":       "0531799f-492d-4482-98a8-0e5b913a3472",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6"],
+        "description":    "Analysis of linear ac circuits using complex variables. Nodal and mesh analysis, Thevenin and Norton transformations, linearity, superposition, use of math solvers, circuit simulators, and computer-interfaced instrumentation.   FS: 10/03/2018."
+    },
+    {
+        "courseSubjectCode" :  "ELCT",
+        "courseNumber" :  "222",
+        "courseTitle" :   "Signals and Systems",   
+        "courseID":    "c055ccc9-3200-476a-83c6-01040cc7ddee", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "0531799f-492d-4482-98a8-0e5b913a3472"],
+        "description":    "Analysis of continuous-time signals and systems in time and frequency domains, Fourier series and transforms, Laplace transforms; introduction to discrete-time signals.   FS: 10/03/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ELCT",
+        "courseNumber" :  "201",
+        "courseTitle" :      "Introductory Electrical Engineering Laboratory",
+        "courseID":   "54a18c11-26e8-45bf-bd71-7e78efbf6eac",  
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["c055ccc9-3200-476a-83c6-01040cc7ddee"],
+        "description":    "Laboratory procedures, instrumentation and measurements, report writing, computer use in system design, testing, and troubleshooting. Integrative project-based learning environment including passive, active, electronic and electromechanical systems.   FS: 11/07/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ECON",
+        "courseNumber" :  "224",
+        "courseTitle" :    "Introduction to Economics", 
+        "courseID":     "93c533e9-b50e-4557-b4da-9f31c0b4b839", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "The study of supply and demand, markets, household and firm decision-making, gross domestic product, inflation, unemployment, and government policies. Open to all students except business administration and economics majors.   FS: 09/10/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MGSC",
+        "courseNumber" :  "290",
+        "courseTitle" :    "Computer Information Systems in Business",  
+        "courseID":   "377ddfb9-de27-4996-8f72-c86999f08c03",  
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "An introduction to the effective use of information systems tools in day-to-day business communications, analysis, and decision making." 
+    },
+    {
+        "courseSubjectCode" :  "STAT",
+        "courseNumber" :  "515",
+        "courseTitle" :      "Statistical Methods I",
+        "courseID":    "a442d36a-1afb-4864-83f7-e1bb46a29f6d", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Applications and principles of elementary probability, essential discrete and continuous probability distributions, sampling distributions, estimation, and hypothesis testing. Inference for means, variances, proportions, one-way ANOVA, simple linear regression, and contingency tables. Statistical packages such as SAS or R.  May not be taken concurrently with or after STAT 509, STAT 513, or STAT 516. Not for CAS, MAS, MS, or PhD credit in Statistics.    FS: 12/02/2015.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "STAT",
+        "courseNumber" :  "516",
+        "courseTitle" :  "Statistical Methods II",  
+        "courseID":     "274f0d39-2889-48c6-8bef-ec460e958414",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "a442d36a-1afb-4864-83f7-e1bb46a29f6d"],
+        "description":   "Applications and principles of linear models. Simple and multiple linear regression, analysis of variance for basic designs, multiple comparisons, random effects, and analysis of covariance. Statistical packages such as SAS. Not for CAS, MAS, MS, or PhD credit in Statistics.   FS: 12/02/2015.   CL: 2020." 
+    },
+    {
+        "courseSubjectCode" :  "ACCT",
+        "courseNumber" :  "222",
+        "courseTitle" :   "Survey of Accounting",   
+        "courseID":    "554472ab-c7cb-4ac6-bf69-0d8b58a99d3d", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  ["f8e10b3a-146b-4d43-a3d8-647028c98641"],
+        "description":    "Survey of accounting topics related to business decisions including financial reporting, managerial accounting, and other special topics.   FS: 09/10/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "MGMT",
+        "courseNumber" :  "371",
+        "courseTitle" :     "Principles of Management", 
+        "courseID":      "01f15c99-15af-4569-8cf0-4fe263053ed8",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "A comprehensive survey of the basic principles of management applicable to all forms of business. The course provides the student with a basis for thinking about complex business situations in the framework of analysis of the management process."
+    },
+    {
+        "courseSubjectCode" : "FREN",
+        "courseNumber" : "109",
+        "courseTitle" : "Beginning French",
+        "courseID":"8699fb7e-844c-4fcd-b212-7a5ac8f5303e",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [],
+        "description":"Introduction to grammar and practical vocabulary necessary for fundamental communication skills."
+    },
+    {
+        "courseSubjectCode" : "FREN",
+        "courseNumber" : "121",
+        "courseTitle" : "Elementary French",
+        "courseID": "4e3bc65d-0fec-45cf-94b7-28692b6df44a",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [],
+        "description":"Grammar and vocabulary necessary for fundamental communication skills. "
+    },
+    {
+        "courseSubjectCode" : "FREN",
+        "courseNumber" : "122",
+        "courseTitle" : "Basic Proficiency in French",
+        "courseID":  "6ecbbe93-a491-488a-a614-23026dd85243",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [ "06fd9a7c-6141-4ca3-ba63-efc1c4f8dce4"],
+        "description":"Practice and further development of essential listening, reading, speaking, and writing skills."
+    },
+    {
+        "courseSubjectCode" : "SPAN",
+        "courseNumber" : "109",
+        "courseTitle" : "Beginning Spanish",
+        "courseID": "4038e4be-d18e-4287-8938-16341579d5a1",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [],
+        "description":"Introduction to grammar and practical vocabulary necessary for fundamental communication skills."
+    },
+    {
+        "courseSubjectCode" : "SPAN",
+        "courseNumber" : "121",
+        "courseTitle" : "Elementary Spanish",
+        "courseID": "646de8da-5d7b-4cf8-beb3-009ba2c05c4a",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [],
+        "description":"Grammar and vocabulary necessary for fundamental communication skills."
+    },
+    {
+        "courseSubjectCode" : "SPAN",
+        "courseNumber" : "122",
+        "courseTitle" : "Basic Proficiency in Spanish",
+        "courseID": "e26d409b-bc8c-4230-b0df-141a0688a262",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [],
+        "description":"Practice and further development of essential listening, reading, speaking, and writing skills."
+    },
+    {
+        "courseSubjectCode" : "ITAL",
+        "courseNumber" : "121",
+        "courseTitle" : "Elementary Italian",
+        "courseID": "ced4953c-d6b7-4a67-9f19-1bcfae7c5ad5",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [],
+        "description":"Grammar and practical vocabulary necessary for fundamental communication skills."
+    },
+    {
+        "courseSubjectCode" : "ITAL",
+        "courseNumber" : "122",
+        "courseTitle" : "Basic Proficiency in Italian",
+        "courseID":  "e558945a-abb7-492c-9b1f-7d2e7d42e9e8",
+        "credits": 3,
+        "applicationArea":"GFL",
+        "prerequisites" : [ "ced4953c-d6b7-4a67-9f19-1bcfae7c5ad5"],
+        "description":"Practice and further development of essential listening, reading, speaking, and writing skills."
+    },
+    {
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "200",
+        "courseTitle" :      "Freedom Papers: Narratives of Race and Nation",
+        "courseID":  "35f2f980-c890-47f1-a328-39149823ad6b",    
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "A study of the United States founding documents that emphasizes how the experiences of African American citizens throughout history and culture shape the country’s values, norms, and ideals.   FS: 06/07/2023."
+    },
+    {
+        "courseSubjectCode" :  "HIST",
+        "courseNumber" :  "111",
+        "courseTitle" :     "United States History to 1865",
+        "courseID":     "3ad398a2-c2b4-438a-ac0a-b0525030bf9d", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "A general survey of the United States from the era of discovery to 1865, emphasizing major political, economic, social, and intellectual developments.     FS: 06/02/2021."
+    },
+    {
+        "courseSubjectCode" :  "ARTH",
+        "courseNumber" :  "107",
+        "courseTitle" :      "History of Asian Art",
+        "courseID":  "0fb4ac09-b5df-47a0-a95b-566e31940f04",   
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Art and culture of India, China, and Japan from prehistory to the present.   FS: 9/13/2017.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "FAMS",
+        "courseNumber" :  "300",
+        "courseTitle" : "Film and Media History",   
+        "courseID":      "fba34fc8-6043-4757-9106-71614f08cb9b",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Surveys the development of cinema and related media from the 1820s to the present. Attention to the relations among key technological, cultural, and industrial changes, their causes, and consequences.   FS: 12/2/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "201",
+        "courseTitle" :   "Introduction to African American Studies: Social and Historical Foundations",   
+        "courseID":     "af901bb2-f867-4d7e-a938-06e0d66639c6", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Introduction to the key debates, figures, and concepts that are fundamental to the interdisciplinary study of the historical, political, and social development of black life in America.   FS: 04/06/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "218",
+        "courseTitle" :     "Convergence and Divergence in African American and Jewish Relations: Historical and Contemporary",
+        "courseID":     "33195c21-2b21-4a53-9f8c-4e8f88876da5",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "An examination of African American and Jewish American inter-ethnic, historical and contemporary connections and disconnections. Implications for educational, social, and social settings are considered.   FS: 04/15/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "355",
+        "courseTitle" :    "Race and Ethnic Relations", 
+        "courseID":  "587d6322-f7ef-4c1d-a3ff-1ab3ad0fb439",   
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Theoretical and empirical approaches related to race/ethnicity and the current state of race relations in American, with some attention to global issues.   FS: 2/1/2017.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "SPCH",
+        "courseNumber" :  "145",
+        "courseTitle" :     "Online Public Communication",
+        "courseID":      "20cef024-e96e-48a6-b9f1-ed1dd1657c63",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Introduction to theory and practice of live and recorded online spoken communication in public, social, and institutional contexts. Training in invention, performance, and critical analysis of online spoken communication, including audience analysis, persuasion, delivery, and ethical engagement. Includes significant practice in preparing and presenting live online public communication.   FS: 12/7/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "AERO",
+        "courseNumber" :  "401",
+        "courseTitle" :     "National Security/Leadership Responsibilities/Commissioning Preparation",
+        "courseID":      "b125dfce-929a-48ce-9fc8-17f6febd9a2f",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "0a751f37-af29-4e07-94b0-fce3bfc7cbcc"],
+        "description":   "Study of U. S. Constitution, the Armed Forces, civilian control of the military, elements of national security, USAF doctrine, Total Force, the Joint environment, terrorism, and regional and cultural studies.   FS: 12/02/2020."
+    },
+    {
+        "courseSubjectCode" :  "ECON",
+        "courseNumber" :  "123",
+        "courseTitle" :     "The American Economy", 
+        "courseID":     "8b489db0-d7a8-44f8-9cae-e3f15d9a258f", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Basic concepts, institutional foundations, structure of the private and public sector, labor markets; major economic problems."
+    },
+    {
+        "courseSubjectCode" :  "ECON",
+        "courseNumber" :  "221",
+        "courseTitle" :      "Principles of Microeconomics",
+        "courseID":     "542433a9-cc0e-4d8c-8038-c5d3179c2d64", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "The study of supply and demand, pricing and cost concepts, firm and consumer decision-making, market structure, and government policies.   FS: 09/10/2014.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ITEC",
+        "courseNumber" :  "447",
+        "courseTitle" :      "Thriving in the Tech Age",
+        "courseID":    "b165928f-3a05-49dd-ba22-95c2292c42ec",  
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Pervasive impact of computers on today\u0027s global society; skills and strategies for using technology.  How information technologies impact daily life and drive change.   FS: 02/02/2022."
+    },
+    {
+        "courseSubjectCode" :  "ITEC",
+        "courseNumber" :  "560",
+        "courseTitle" :      "Project Management Methods",
+        "courseID":      "a6e22db3-c52f-487e-b970-5c783881fe73",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Project management principles and standard practices, including software applications for project management.   FS: 12/04/2019.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "GEOL",
+        "courseNumber" :  "101",
+        "courseTitle" :     "Introduction to the Earth",
+        "courseID":      "07ab147e-a181-405d-aeec-3c153f2fe695",
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Origin and nature of the earth with emphasis on internal processes and phenomena such as earthquakes, volcanoes, and mountain building; surface processes, including landform evolution.  Three lectures and three laboratory hours each week.   FS: 06/05/2019.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "GEOL",
+        "courseNumber" :  "103",
+        "courseTitle" :      "Environment of the Earth",
+        "courseID":      "ab6753ca-0e22-4674-8e61-5a5020baf250",
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Analysis of basic energy cycles of the earth. Interaction of human activity with earth processes to affect the environment.  Three lectures and three laboratory hours each week. Field trips required.   FS: 06/12/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "GEOL",
+        "courseNumber" :  "201",
+        "courseTitle" :       "Observing the Earth", 
+        "courseID":      "1fd54da1-1cad-451d-b141-017ee2dae1db", 
+        "credits": 4,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "An introduction to study of the earth through observation of ancient and modern earth systems in a field setting.  Field trips required.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CHEM",
+        "courseNumber" :  "112L",
+        "courseTitle" :     "General Chemistry II Lab",  
+        "courseID":     "75764c82-d463-4fcf-a367-e7f925416456", 
+        "credits": 1,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "66a95212-0d75-4fae-97ff-c3c76c29d47e"],
+        "description":   "Continuation of CHEM 111L with emphasis on solution properties, kinetics, equilibrium, acids and bases, and qualitative analysis.   FS: 09/12/2013.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "201",
+        "courseTitle" :  "Introduction to African American Studies: Social and Historical Foundations",     
+        "courseID":     "af901bb2-f867-4d7e-a938-06e0d66639c6",  
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Introduction to the key debates, figures, and concepts that are fundamental to the interdisciplinary study of the historical, political, and social development of black life in America.   FS: 04/06/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "202",
+        "courseTitle" :  "Introduction to African-American Studies",     
+        "courseID":    "277c57bf-d5b8-4a69-941f-0f494c30d99e",   
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Introduction to the analysis and discussion of creative works and traditions by and about African Americans through folklore, music, art, dance, and literature.   FS: 11/04/2020.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "PHIL",
+        "courseNumber" :  "213",
+        "courseTitle" :        "Communicating Moral Issues",
+        "courseID":     "b08931d4-1c51-42df-96b6-aef74900873a", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Moral issues confronting men and women in contemporary society and the challenges of communicating effectively about them. Topics will vary but may include access to health care, euthanasia, abortion, same sex marriage and the moral and environmental consequences of eating animals.   FS: 04/06/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "247",
+        "courseTitle" :    "Software Engineering",   
+        "courseID":     "730005f1-113d-446e-865c-31b46dfbc924", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "Fundamentals of software design and development; software implementation strategies; object-oriented design techniques; functional design techniques; design patterns; design process; source control; testing.    FS: 12/6/2017.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ACCT",
+        "courseNumber" :  "324",
+        "courseTitle" :    "Survey of Federal Taxation",   
+        "courseID":      "6390e71f-3219-4036-8347-5f8545de9a32", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":    "Federal tax law and preparation of individual income tax returns. Not allowed as an upper-division elective by accounting majors and not open for students who received credit for ACCT 403.    CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ECON",
+        "courseNumber" :  "311",
+        "courseTitle" :       "Issues in Economics",
+        "courseID":      "95e7009a-e959-4a3d-a546-293748d5d4f0", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [],
+        "description":   "The nature and causes of major economic problems facing the nation and its communities, and policy alternatives designed to solve them. The philosophy and methodology of economics in social problem solving.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :   "350",
+        "courseTitle" :   "Data Structures and Algorithms",    
+        "courseID":     "6c8202fd-b31b-4647-b551-b7f4dbf007a0",
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "39046cda-f913-4f9b-a002-f06e7c59f235"],
+        "description":   "Techniques for representing and processing information, including the use of lists, trees, and graphs; analysis of algorithms; sorting, searching, and hashing techniques.   FS: 12/07/2016.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "CSCE", 
+        "courseNumber" :   "313",
+        "courseTitle" :   "Embedded Systems",     
+        "courseID":   "bab69897-7cbf-4acd-839e-cec82daa1cd0",  
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "789c6ed0-53e3-476c-8761-f08bf727d08c"],
+        "description":  "Fundamentals of embedded systems: hardware components, software components, hardware/software interface design, and hardware/software co-design.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" : "ELCT", 
+        "courseNumber" :   "321",
+        "courseTitle" :     "Digital Signal Processing",  
+        "courseID":    "de747cdf-8019-4d39-bebc-278236f3d700", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "c055ccc9-3200-476a-83c6-01040cc7ddee"],
+        "description":   "An introduction to analysis, design and applications of discrete time systems; z- and discrete Fourier transforms; frequency and impulse responses, FIR and IIR filters.   FS: 11/07/2018.   CL: 2020."
+    },
+    {
+        "courseSubjectCode" :  "ELCT",
+        "courseNumber" :   "331",
+        "courseTitle" :     "Control Systems",  
+        "courseID":     "d5702212-9e45-497b-bb74-d78bb9a5f9e1", 
+        "credits": 3,
+        "applicationArea": "Robotics",
+        "prerequisites" :  [ "c055ccc9-3200-476a-83c6-01040cc7ddee"],
+        "description": "Fundamentals of control systems. Analysis and design of control systems using physical system models. State variables, steady-state error, time- and frequency-responses, control system stability. Root locus analysis and controller design – PI, PD, PID, lead-lag compensator. Nyquist stability criterion.   FS: 11/07/2018.   CL: 2020." 
+    }
+
+     
+]

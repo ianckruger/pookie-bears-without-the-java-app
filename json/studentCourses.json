@@ -1,0 +1,673 @@
+[
+    {
+        "studentID":"3a261b51-2b01-4b22-a51c-4fce51aaaad8",
+        "courseID":"684f6d78-9f42-4e22-b447-7b15782007b3",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":95.00
+    },
+    {
+        "studentID":"3a261b51-2b01-4b22-a51c-4fce51aaaad8",
+        "courseID":"994ee39f-7d7a-4759-8eec-9cb0a80118c2",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"Spring 2024",
+        "grade":85
+        
+    },
+    {
+        "studentID":"3a261b51-2b01-4b22-a51c-4fce51aaaad8",
+        "courseID":"a2d29md7-190s-29jn-29nd-1c78f59a0911",
+        "transferred":true,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"transferred",
+        "grade": 90.00
+    },
+
+    { "comment": "This is the start of scenario 1 classes."},
+
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "ENGL",
+        "courseNumber" :  "101",
+        "courseID":    "12224407-e656-4fe7-9078-88f1d9dc8325",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2021",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" : "GEOL",
+        "courseNumber" :  "101",
+        "courseID":      "07ab147e-a181-405d-aeec-3c153f2fe695",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2021",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :"CSCE"  ,
+        "courseNumber" : "145" ,
+        "courseID": "2e2ebf3f-c4d3-4dae-956b-d8afa7fca627",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2021",
+        "grade":95.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "190" ,
+        "courseID": "3cca9c4e-a195-4759-a761-cfe09adb20b8",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2021",
+        "grade":95.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "142",
+        "courseID":    "3d7aa3f8-bfb0-4f9e-af57-49818eacf9a6",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2021",
+        "grade":97.00
+    },
+
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "ENGL",
+        "courseNumber" :  "102",
+        "courseID":    "980e1056-4ed2-4459-b0e7-56d78eca5d73",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2022",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" : "330" ,
+        "courseID": "d71f3a41-5b83-40b6-94a7-609b01ca2caa",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2022",
+        "grade":87
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :"CSCE",
+        "courseNumber" : "211" ,
+        "courseID": "789c6ed0-53e3-476c-8761-f08bf727d08c",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2022",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "CHEM",
+        "courseNumber" :  "111L",
+        "courseID":     "b6bf4208-6933-4e10-a961-118f12d7acba",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2022",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "CSCE",
+        "courseNumber" :  "146",
+        "courseID":  "57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2022",
+        "grade":89
+    },
+
+
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "311" ,
+        "courseID": "684f6d78-9f42-4e22-b447-7b15782007b3",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":85
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "MATH",
+        "courseNumber" :  "374",
+        "courseID":    "928eb174-dea9-4b98-80b1-ac594c4360f8",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":79.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "GEOL",
+        "courseNumber" :  "103",
+        "courseID":      "ab6753ca-0e22-4674-8e61-5a5020baf250",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "212" ,
+        "courseID": "dd218911-2c00-46b4-99fc-0aa909331369",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":95.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" : "240",
+        "courseID":"39046cda-f913-4f9b-a002-f06e7c59f235",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":89
+    },
+
+
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "AERO",
+        "courseNumber" :  "401",
+        "courseID":      "b125dfce-929a-48ce-9fc8-17f6febd9a2f",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":89
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" : "CSCE" ,
+        "courseNumber" :  "215",
+        "courseID": "9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":89
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :"CSCE",
+        "courseNumber" : "317",
+        "courseID": "c92f728c-76a7-4cf4-a220-8d41d5468014",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":89
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "ARTH",
+        "courseNumber" :  "107",
+        "courseID":  "0fb4ac09-b5df-47a0-a95b-566e31940f04",   
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":97.00
+    },
+    {
+        "studentID":"f6aed0c2-f32a-489a-a6c6-505985db2788",
+        "courseSubjectCode" :  "AFAM",
+        "courseNumber" :  "202",
+        "courseID":    "277c57bf-d5b8-4a69-941f-0f494c30d99e",   
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":97.00
+    },
+
+    {"end of scenario 1 classes": ""},
+
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "9583ee33-5e0b-43fe-9bc7-7ef3816da225",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "6c8202fd-b31b-4647-b551-b7f4dbf007a0",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"S",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "f16c3f7d-4f83-4a11-8b47-632572514136",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "42288ffd-4ead-4718-b840-4be2894d8f30",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"Spring 2023",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "f425f91f-92da-4261-be45-347d81b6ab9d",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2023",
+        "grade":95.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "86229990-45b3-48e6-b444-0b9db99e8a8c",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "5dfb6a47-ff2c-4977-ab64-588da4f687a4",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "fdf13bc5-f270-4c26-a749-720a50d0b00a",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":85
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "12224407-e656-4fe7-9078-88f1d9dc8325",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "980e1056-4ed2-4459-b0e7-56d78eca5d73",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "2e2ebf3f-c4d3-4dae-956b-d8afa7fca627",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "4bd274cb-260e-47a5-9893-203a3943d704",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "a379a182-57c9-4b28-950d-35903009bce3",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "b6bf4208-6933-4e10-a961-118f12d7acba",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "66a95212-0d75-4fae-97ff-c3c76c29d47e",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":95.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "75764c82-d463-4fcf-a367-e7f925416456",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "8699fb7e-844c-4fcd-b212-7a5ac8f5303e",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":97.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "0fb4ac09-b5df-47a0-a95b-566e31940f04",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "af901bb2-f867-4d7e-a938-06e0d66639c6",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "277c57bf-d5b8-4a69-941f-0f494c30d99e",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":   "b08931d4-1c51-42df-96b6-aef74900873a",
+        "transferred":false,
+        "inProgress":true,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "b08931d4-1c51-42df-96b6-aef74900873a",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "96cd3d5d-590a-4567-9cc3-787e03cc5140",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":89
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8", 
+        "courseID":  "b125dfce-929a-48ce-9fc8-17f6febd9a2f",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":85
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "8b489db0-d7a8-44f8-9cae-e3f15d9a258f",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "542433a9-cc0e-4d8c-8038-c5d3179c2d64",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "c30f5f36-fc9c-49d4-b5c4-baec9cc82194",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "a014f77a-2ac5-4f22-87d7-f0ab623dce64",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "f4b55e57-6034-4462-81ca-13c559697988",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2023",
+        "grade":87
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":   "274f0d39-2889-48c6-8bef-ec460e958414",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":95.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "57eaa5d5-a439-43b1-87fc-2d3a4c0b9cd6",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "3cca9c4e-a195-4759-a761-cfe09adb20b8",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":95.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "cecc9003-5bf5-4d17-b01d-895f24ea03a2",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Spring 2023",
+        "grade":87
+    },
+    
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":   "f9bc9ca2-9fe9-43eb-8444-2f0fc53da6c3",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "9b9ea0d0-3574-44be-b6cf-1ef50ce2aa23",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "39046cda-f913-4f9b-a002-f06e7c59f235",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":   "730005f1-113d-446e-865c-31b46dfbc924",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "93c533e9-b50e-4557-b4da-9f31c0b4b839",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "554472ab-c7cb-4ac6-bf69-0d8b58a99d3d",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "01f15c99-15af-4569-8cf0-4fe263053ed8",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "377ddfb9-de27-4996-8f72-c86999f08c03",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "6390e71f-3219-4036-8347-5f8545de9a32",
+        "transferred":false,
+        "inProgress":false,
+        "completed":true,
+        "semesterTaken":"Fall 2022",
+        "grade":87
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "95e7009a-e959-4a3d-a546-293748d5d4f0",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "b165928f-3a05-49dd-ba22-95c2292c42ec",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    },
+    {
+        "studentID": "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8",
+        "courseID":  "a6e22db3-c52f-487e-b970-5c783881fe73",
+        "transferred":false,
+        "inProgress":false,
+        "completed":false,
+        "semesterTaken":"",
+        "grade":0.00
+    }
+
+
+
+
+
+
+]
