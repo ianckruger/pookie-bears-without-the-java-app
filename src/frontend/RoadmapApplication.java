@@ -34,33 +34,22 @@ public class RoadmapApplication {
         
     }
 
+    public boolean register(String userName, String firstName, String lastName, String password, String userType) {
+        if(userlist.register(userName, firstName, lastName, password, userType)) {
+           return true;
+        } else
+        return false;
+
+   }
 
     public boolean login(String userName, String password) {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
-        try (Scanner scanner = new Scanner(System.in)) {
-            if (userList != null) {
-                for (User user : userList) {
-                    if (user.getUserName().equals(userName) && user.getPassword().equals(password)) {
-                        // If user is a student
-                        if (user.getUserType().equalsIgnoreCase("student")) {
-                            Student student = (Student) user;
-                            users.setActiveUser(student);
-                            CourseList courseList = CourseList.getInstance();
-                            Roadmap roadmap = Roadmap.getInstance();
-                            setRoadmap(roadmap);
-                            roadmap.setMajorState(student.getCurrentMajor());
-                            return true;
-                        } else if (user.getUserType().equalsIgnoreCase("advisor")) {
-                            users.setAdvisor(user);
-                            return true;
-                        }
-                        
-                    }
-                }
-            }
-        } 
-        return false; // Return false if no user is found or incorrect credentials
+        if(users.login(userName, password)) {
+            return true;
+        }
+        return false;
+       
     }
 
 
@@ -103,32 +92,6 @@ public class RoadmapApplication {
     }
      
 
-
- 
- 
-    public boolean register(String userName, String firstName, String lastName, String password, String userType) {
-         if ( userType.equalsIgnoreCase("student")) {
-            Student student = new Student(userName, firstName, lastName, password, userType);
-            userlist.addUser(student);
-            DataWriter.saveUsers();
-            return true;
-        } else if(userType.equalsIgnoreCase("parent")) {
-            Parent parent = new Parent(userName, firstName, lastName, password, userType);
-            userlist.addUser(parent);
-            DataWriter.saveUsers();
-            return true;
-        } else if(userType.equalsIgnoreCase("advisor")) {
-            Advisor advisor = new Advisor(userName, firstName, lastName, password, userType);
-            userlist.addUser(advisor);
-            DataWriter.saveUsers();
-            return true;
-        }
-
- 
-        return false;
-
-    }
-
     public boolean isUsernameTaken(String userName) {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
@@ -143,12 +106,10 @@ public class RoadmapApplication {
     }
 
     public boolean logout() {
-        if (user != null) {
-            return false;
+        if(userlist.logout()) {
+            return true;
         }
-        DataWriter.saveUsers();
-        user = null;
-        return true;
+        return false;
 
     }
 
@@ -158,6 +119,7 @@ public class RoadmapApplication {
         if(student != null) {
             String major = student.getCurrentMajor();
             if (major != null ) {
+                Roadmap roadmap = Roadmap.getInstance()
                System.out.println(roadmap.displayClasses());
                 return true;
             } else {
