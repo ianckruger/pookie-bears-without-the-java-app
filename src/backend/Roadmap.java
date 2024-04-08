@@ -91,6 +91,9 @@ public class Roadmap {
     public MajorState getMajorState() {
         return this.majorState;
     }
+    public void setRoadmap(Roadmap roadmap) {
+        this.roadmap = roadmap;
+    }
 
     
     

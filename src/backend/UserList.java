@@ -41,42 +41,6 @@ public class UserList {
     public void addUser(User user) {
         userList.add(user);
     }
-
-
-    public boolean registerStudent(String userName, String firstName, String lastName, String password, String userType, double gpa, String year, String currentMajor, int earnedCreditHours, int totalCurrentCredits, int degreeCredits, ArrayList<String> parents, ArrayList<String> advisors) {
-        UserList userlist = UserList.getInstance();
-        if ( userType.equals("student")) {
-            Student student = new Student(userName, firstName, lastName, password, userType, gpa, year, currentMajor, earnedCreditHours, totalCurrentCredits,   degreeCredits,  parents, advisors);
-            userList.add(ActiveUser);
-            DataWriter.saveUsers();
-            return true;
-        }
-        return false;
-    }
-
-    public boolean registerParent(String userName, String firstName, String lastName, String password, String userType, ArrayList<String> children, User child) {
-        UserList userlist = UserList.getInstance();
-        if(userType.equals("parent")) {
-            Parent parent = new Parent(userName, firstName, lastName, password, userType, children, child );
-            userList.add(ActiveUser);
-            DataWriter.saveUsers();
-            return true;
-        }
-        return false;
-    }
-
-    public boolean registerAdvisor(String userName, String firstName, String lastName, String password, String userType, ArrayList<String> students, User advising) {
-        UserList userlist = UserList.getInstance();
-        if(userType.equals("advisor")) {
-            Advisor advisor = new Advisor(userName, firstName, lastName, password, userType, students, advising);
-            userList.add(ActiveUser);
-            DataWriter.saveUsers();
-            return true;
-
-        }
-        return false;
-    }
-
     public void setAdvisor(User user) {
         this.advisor = user;
     }
@@ -85,6 +49,7 @@ public class UserList {
         return this.advisor;
     }
 
+<<<<<<< HEAD
     // MOVING THE ADD IN
 
     public void advisor() {
@@ -158,6 +123,76 @@ public class UserList {
         }
         return false; // Return false if advisor or student not found, or student is not of type "student"
     }
+=======
+    public boolean login(String userName, String password) {
+        UserList users = UserList.getInstance();
+        ArrayList<User> userList = users.getUsers();
+        try (Scanner scanner = new Scanner(System.in)) {
+            if (userList != null) {
+                for (User user : userList) {
+                    if (user.getUserName().equals(userName) && user.getPassword().equals(password)) {
+                        // If user is a student
+                        if (user.getUserType().equalsIgnoreCase("student")) {
+                            Student student = (Student) user;
+                            users.setActiveUser(student);
+                            CourseList courseList = CourseList.getInstance();
+                            Roadmap roadmap = Roadmap.getInstance();
+                            roadmap.setRoadmap(roadmap);
+                            roadmap.setMajorState(student.getCurrentMajor());
+                            return true;
+                        } else if (user.getUserType().equalsIgnoreCase("advisor")) {
+                            users.setAdvisor(user);
+                            return true;
+                        }
+                        
+                    }
+                }
+            }
+        } 
+        return false; // Return false if no user is found or incorrect credentials
+
+    }
+
+    public boolean register(String userName, String firstName, String lastName, String password, String userType) {
+        if ( userType.equalsIgnoreCase("student")) {
+           Student student = new Student(userName, firstName, lastName, password, userType);
+           addUser(student);
+           DataWriter.saveUsers();
+           return true;
+       } else if(userType.equalsIgnoreCase("parent")) {
+           Parent parent = new Parent(userName, firstName, lastName, password, userType);
+           addUser(parent);
+           DataWriter.saveUsers();
+           return true;
+       } else if(userType.equalsIgnoreCase("advisor")) {
+           Advisor advisor = new Advisor(userName, firstName, lastName, password, userType);
+           addUser(advisor);
+           DataWriter.saveUsers();
+           return true;
+       }
+
+
+       return false;
+
+   }
+
+   public boolean logout() {
+    if (ActiveUser != null) {
+        return false;
+    }
+    DataWriter.saveUsers();
+    ActiveUser = null;
+    return true;
+    
+
+}
+
+
+    
+
+    
+
+>>>>>>> brandon
      
 
 
