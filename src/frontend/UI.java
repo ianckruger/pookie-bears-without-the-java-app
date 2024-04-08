@@ -61,9 +61,9 @@ public class UI {
             case 7:
                 scenario1(); // Running scenario 1
                 break;
-            case 8: 
-                scenario2();
-                break;
+            // case 8: 
+            //     scenario2();
+            //     break;
             default:
                 System.out.println("Invalid choice. Please enter a number between 1 and 6.");
         }
@@ -217,67 +217,68 @@ public class UI {
 
 
     }
-
-
-    public void scenario2() {
-        
-        if(application.register("odden01", "Odden", "Osbert", "12345", "advisor")) {
-            System.out.println("Advisor account created successfully");
-        }
-        userLogin();
-
-        if (application.addAdvisee("odden01", "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8")) {
-            System.out.println("Added Tawnie Hill as your advisee");
-        } else {
-            System.out.println("Failed to add Tawnie Hill as your advisee.");
-            return;  
-        }
-        
-
-        boolean continueLoop = true;
-        while(continueLoop) {
-            System.out.println("\nChoose an option:");
-            System.out.println("1. View student's progress");
-            System.out.println("2. Add a note for the student");
-            System.out.println("3. Exit");
-            int choice = scanner.nextInt();
-            
-
-
-            switch (choice) {
-                case 1:
-                    
-                    System.out.println("View student's current progress...");
-                    if(application.printStudentProgress()) {
-                        System.out.println("Student's progress printed successfully.");
-                        
-                    }
-                    else {
-                        System.out.println("Failed to print student's progress.");
-                    }
-                    System.out.println("\nApplication Area: undeclared");
-                    break;
-                    
-                case 2:
-                    // Add a note for the student
-                    System.out.println("Adding a note for the student...");
-                    String note = "I have seen you have taken STAT509 and STAT516, consider picking Statistics as your Application Area";
-                    if(application.addNoteToStudent(note)) {
-                            System.out.println("Note added successfully");
-                    }
-                    
-                    break;
-                    case 3:
-                    continueLoop = false; // Exit the loop
-                    break;
-
-            }
-
-        }
-            
-
-    }
-
-
-
 }
+
+
+    // public void scenario2() {
+        
+    //     if(application.register("odden01", "Odden", "Osbert", "12345", "advisor")) {
+    //         System.out.println("Advisor account created successfully");
+    //     }
+    //     userLogin();
+
+    //     if (application.addAdvisee("odden01", "aa39ad3f-1cbc-4b14-8051-efb5500ff0b8")) {
+    //         System.out.println("Added Tawnie Hill as your advisee");
+    //     } else {
+    //         System.out.println("Failed to add Tawnie Hill as your advisee.");
+    //         return;  
+    //     }
+        
+
+//         boolean continueLoop = true;
+//         while(continueLoop) {
+//             System.out.println("\nChoose an option:");
+//             System.out.println("1. View student's progress");
+//             System.out.println("2. Add a note for the student");
+//             System.out.println("3. Exit");
+//             int choice = scanner.nextInt();
+            
+
+
+//             switch (choice) {
+//                 case 1:
+                    
+//                     System.out.println("View student's current progress...");
+//                     if(application.printStudentProgress()) {
+//                         System.out.println("Student's progress printed successfully.");
+                        
+//                     }
+//                     else {
+//                         System.out.println("Failed to print student's progress.");
+//                     }
+//                     System.out.println("\nApplication Area: undeclared");
+//                     break;
+                    
+//                 case 2:
+//                     // Add a note for the student
+//                     System.out.println("Adding a note for the student...");
+//                     String note = "I have seen you have taken STAT509 and STAT516, consider picking Statistics as your Application Area";
+//                     if(application.addNoteToStudent(note)) {
+//                             System.out.println("Note added successfully");
+//                     }
+                    
+//                     break;
+//                     case 3:
+//                     continueLoop = false; // Exit the loop
+//                     break;
+
+//             }
+
+//         }
+            
+
+//     }
+
+
+
+// }

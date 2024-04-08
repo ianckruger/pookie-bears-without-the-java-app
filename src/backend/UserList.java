@@ -49,7 +49,6 @@ public class UserList {
         return this.advisor;
     }
 
-<<<<<<< HEAD
     // MOVING THE ADD IN
 
     public void advisor() {
@@ -123,7 +122,6 @@ public class UserList {
         }
         return false; // Return false if advisor or student not found, or student is not of type "student"
     }
-=======
     public boolean login(String userName, String password) {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
@@ -192,7 +190,6 @@ public class UserList {
 
     
 
->>>>>>> brandon
      
 
 
