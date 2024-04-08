@@ -65,11 +65,6 @@ public class RoadmapApplication {
 
     
 
-    public int RoadmapAdvisorOptions(User user) {
-        UserList userList = UserList.getInstance();
-        userList.RoadmapAdvisorOptions();
-    }
-
     public boolean addAdvisee(String advisorUsername, String studentId) {
          UserList userList = UserList.getInstance();
         
@@ -119,7 +114,7 @@ public class RoadmapApplication {
         if(student != null) {
             String major = student.getCurrentMajor();
             if (major != null ) {
-                Roadmap roadmap = Roadmap.getInstance()
+                Roadmap roadmap = Roadmap.getInstance();
                System.out.println(roadmap.displayClasses());
                 return true;
             } else {
