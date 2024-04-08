@@ -62,6 +62,7 @@ public class RoadmapApplication {
         UserList userList = UserList.getInstance();
         userList.student();
     }
+<<<<<<< HEAD
 
     
 
@@ -85,6 +86,8 @@ public class RoadmapApplication {
         }
         return false; // Return false if advisor or student not found, or student is not of type "student"
     }
+=======
+>>>>>>> afbfb9a807f84d8bfb8d7c84c62d64e62e76253f
      
 
     public boolean isUsernameTaken(String userName) {
