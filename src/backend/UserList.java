@@ -9,12 +9,11 @@ public class UserList {
     private ArrayList<User> userList;
     private User ActiveUser;
     private User advisor;
-    private Scanner scanner;
 
     private UserList() {
         this.ActiveUser = null;
         this.userList = new ArrayList<User>();
-        this.scanner = new Scanner(System.in);
+        
          
     }
 
@@ -55,9 +54,9 @@ public class UserList {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
         User user = users.getAdvisor();
-        try (Scanner scanner = new Scanner(System.in)) {
-            int choice = RoadmapAdvisorOptions(user);
-            if (choice == 1) {
+        int choice = RoadmapAdvisorOptions(user);
+        if (choice == 1) {
+                Scanner scanner = new Scanner(System.in);
                 System.out.println("Enter a student ID to find: ");
                 String studentId = scanner.nextLine();
                 for (User student : userList) {
@@ -67,8 +66,10 @@ public class UserList {
                         Roadmap roadmap = Roadmap.getInstance();
                     }
                 }
+                scanner.close();
             }
             else if (choice == 2) {
+                Scanner scanner = new Scanner(System.in);
                 if (users.getActive() != null) {
                     System.out.println("What note would you like to add?: ");
                     String note = scanner.nextLine();
@@ -80,25 +81,32 @@ public class UserList {
                 } else {
                     System.out.println("Load a student first.");
                 }
+                scanner.close();
 
                 }
-            }
     }
 
     public void student() {
+        Scanner scanner = new Scanner(System.in);
         UserList users = UserList.getInstance();
         Student student = (Student)users.getActive();
         System.out.println("Hello "+student.getFirstName()+". What would you like to do?\n1. Display Roadmap\n2. Find Class");
         int choice = scanner.nextInt();
+        scanner.close();
 
     }
 
     
 
     public int RoadmapAdvisorOptions(User user) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Hello "+user.getFirstName()+". What would you like to do?\n1. View Student\n2. Add note\n");
-        scanner.next();
-        int choice = scanner.nextInt();
+        int choice = 0;
+        // Consume newline character after nextInt()
+        if(scanner.hasNextInt()) {
+            choice = scanner.nextInt();
+        }
+        scanner.close();
         return choice;
     }
 
