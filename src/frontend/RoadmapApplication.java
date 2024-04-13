@@ -53,9 +53,9 @@ public class RoadmapApplication {
     }
 
 
-    public void advisor() {
+    public void advisor(int choice) {
         UserList userList = UserList.getInstance();
-        userList.advisor();
+        userList.advisor(choice);
     }
 
     public void student() {

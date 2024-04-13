@@ -22,14 +22,6 @@ public class UI {
     }
 
     
-    public void start() {
-        System.out.println("Enter your name:");
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "! Welcome to the Roadmap Application.");
-
-        //application.startApplication();
-    }
-    
 
     public void run() {
         int userChoice = displayMainMenu();
@@ -39,7 +31,8 @@ public class UI {
                 userLogin();
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
-                    application.advisor();
+                    int newChoice = displayAdvisorMenu();
+                    application.advisor(newChoice);
                 }
 
                 break;
@@ -68,6 +61,8 @@ public class UI {
                 System.out.println("Invalid choice. Please enter a number between 1 and 6.");
         }
     }
+
+    
     
 
     public int displayMainMenu() {
@@ -77,6 +72,18 @@ public class UI {
         System.out.println("2. Register");
         System.out.println("3. Exit");
         
+        System.out.println("Enter your choice:");
+
+        int choice = scanner.nextInt();
+        
+        return choice;
+    }
+
+    public int displayAdvisorMenu() {
+        System.out.println("What would you like to do?");
+        
+        System.out.println("1: Select Student");
+        System.out.println("2. Add note");
         System.out.println("Enter your choice:");
 
         int choice = scanner.nextInt();
