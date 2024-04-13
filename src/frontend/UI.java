@@ -34,7 +34,7 @@ public class UI {
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
                     int newChoice = displayAdvisorMenu();
-                    application.advisor(newChoice);
+                    application.advisor(newChoice, scanner);
                 }
 
                 break;
@@ -53,9 +53,9 @@ public class UI {
             case 6:
                 scenario5(); // Creating an Advisor Account
                 break;
-            case 7:
-                scenario1(); // Running scenario 1
-                break;
+            // case 7:
+            //     scenario1(); // Running scenario 1
+            //     break;
             // case 8: 
             //     scenario2();
             //     break;
@@ -89,13 +89,14 @@ public class UI {
         System.out.println("1: Select Student");
         System.out.println("2. Add note");
         System.out.println("Enter your choice:");
-
+        
+        String choice = scanner.nextLine();
+        int choiceInt = Integer.parseInt(choice);
         System.out.println(scanner.hasNext());
         System.out.println(scanner.hasNextInt());
 
-        int choice = scanner.nextInt();
         
-        return choice;
+        return choiceInt;
     }
 
     public void userLogin() {
@@ -105,7 +106,7 @@ public class UI {
         String password = scanner.nextLine();
 
 
-        if (!application.login(userName, password)) {
+        if (!application.login(userName, password, scanner)) {
             System.out.println("Username or Password is not correct.");
             return;
         }
@@ -144,7 +145,7 @@ public class UI {
         }
 
         // wont work if not added to user list
-        if (!application.login(userName, password)) {
+        if (!application.login(userName, password, scanner)) {
             System.out.println("Username or Password is not correct.");
             return;
         }
@@ -212,25 +213,25 @@ public class UI {
         return application.register(userName, firstName, lastName, password , userType);
     }
 
-    public void scenario1() {
-        if (!application.login("brax-west", "brax-is-cool")) {
-            System.out.println("Sorry we couldn't log you in.");
-        } else {
+    // public void scenario1() {
+    //     if (!application.login("brax-west", "brax-is-cool")) {
+    //         System.out.println("Sorry we couldn't log you in.");
+    //     } else {
 
-            System.out.println("Brax West is now logged in\nGenerating student's current progress...");
+    //         System.out.println("Brax West is now logged in\nGenerating student's current progress...");
 
-            if(application.printStudentProgress()) {
-                System.out.println("Student's progress printed successfully.");
+    //         if(application.printStudentProgress()) {
+    //             System.out.println("Student's progress printed successfully.");
                 
-            }
-            else {
-                System.out.println("Failed to print student's progress.");
-            }
+    //         }
+    //         else {
+    //             System.out.println("Failed to print student's progress.");
+    //         }
 
-        }
+    //     }
 
 
-    }
+    // }
 }
 
 

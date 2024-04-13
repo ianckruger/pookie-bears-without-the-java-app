@@ -9,12 +9,12 @@ public class UserList {
     private ArrayList<User> userList;
     private User ActiveUser;
     private User advisor;
-    private Scanner scanner;
+    // private Scanner scanner;
 
     private UserList() {
         this.ActiveUser = null;
-        this.userList = new ArrayList<User>();
-        this.scanner = new Scanner(System.in);
+        this.userList = new ArrayList<User>();        
+        // this.scanner = new Scanner(System.in);
         
          
     }
@@ -52,7 +52,8 @@ public class UserList {
 
     // MOVING THE ADD IN
 
-    public void advisor(int choice) {
+    public void advisor(int choice, Scanner scanner) {
+        System.out.println(choice+ "advisor choice");
         if (choice == 1) {
                 System.out.println("Enter a student ID to find: ");
                 String studentId = scanner.nextLine();
@@ -78,9 +79,10 @@ public class UserList {
                 }
 
                 }
+
     }
 
-    public void student() {
+    public void student(Scanner scanner) {
         UserList users = UserList.getInstance();
         Student student = (Student)users.getActive();
         System.out.println("Hello "+student.getFirstName()+". What would you like to do?\n1. Display Roadmap\n2. Find Class");
@@ -111,10 +113,9 @@ public class UserList {
         }
         return false; // Return false if advisor or student not found, or student is not of type "student"
     }
-    public boolean login(String userName, String password) {
+    public boolean login(String userName, String password, Scanner scanner) {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
-        try (Scanner scanner = new Scanner(System.in)) {
             if (userList != null) {
                 for (User user : userList) {
                     if (user.getUserName().equals(userName) && user.getPassword().equals(password)) {
@@ -135,7 +136,6 @@ public class UserList {
                     }
                 }
             }
-        } 
         return false; // Return false if no user is found or incorrect credentials
 
     }
