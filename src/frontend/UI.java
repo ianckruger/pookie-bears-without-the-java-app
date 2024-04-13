@@ -29,6 +29,8 @@ public class UI {
             case 1:
                 System.out.println("Logging in...");
                 userLogin();
+                System.out.println(scanner.hasNext());
+                System.out.println(scanner.hasNextInt());
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
                     int newChoice = displayAdvisorMenu();
@@ -74,7 +76,9 @@ public class UI {
         
         System.out.println("Enter your choice:");
 
-        int choice = scanner.nextInt();
+        String input = scanner.nextLine();
+		int choice = Integer.parseInt(input);
+		
         
         return choice;
     }
@@ -86,17 +90,20 @@ public class UI {
         System.out.println("2. Add note");
         System.out.println("Enter your choice:");
 
+        System.out.println(scanner.hasNext());
+        System.out.println(scanner.hasNextInt());
+
         int choice = scanner.nextInt();
         
         return choice;
     }
 
     public void userLogin() {
-        scanner.nextLine();
         System.out.println("Enter a username:");
         String userName = scanner.nextLine();
         System.out.println("Enter a password:");
         String password = scanner.nextLine();
+
 
         if (!application.login(userName, password)) {
             System.out.println("Username or Password is not correct.");

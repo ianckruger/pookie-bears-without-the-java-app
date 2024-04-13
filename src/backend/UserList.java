@@ -63,7 +63,6 @@ public class UserList {
                         Roadmap roadmap = Roadmap.getInstance();
                     }
                 }
-                scanner.close();
             }
             else if (choice == 2) {
                 if (users.getActive() != null) {
@@ -77,18 +76,15 @@ public class UserList {
                 } else {
                     System.out.println("Load a student first.");
                 }
-                scanner.close();
 
                 }
     }
 
     public void student() {
-        Scanner scanner = new Scanner(System.in);
         UserList users = UserList.getInstance();
         Student student = (Student)users.getActive();
         System.out.println("Hello "+student.getFirstName()+". What would you like to do?\n1. Display Roadmap\n2. Find Class");
         int choice = scanner.nextInt();
-        scanner.close();
 
     }
 
