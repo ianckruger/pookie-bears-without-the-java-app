@@ -9,10 +9,12 @@ public class UserList {
     private ArrayList<User> userList;
     private User ActiveUser;
     private User advisor;
+    private Scanner scanner;
 
     private UserList() {
         this.ActiveUser = null;
         this.userList = new ArrayList<User>();
+        this.scanner = new Scanner(System.in);
         
          
     }
@@ -50,13 +52,8 @@ public class UserList {
 
     // MOVING THE ADD IN
 
-    public void advisor() {
-        UserList users = UserList.getInstance();
-        ArrayList<User> userList = users.getUsers();
-        User user = users.getAdvisor();
-        int choice = RoadmapAdvisorOptions(user);
+    public void advisor(int choice) {
         if (choice == 1) {
-                Scanner scanner = new Scanner(System.in);
                 System.out.println("Enter a student ID to find: ");
                 String studentId = scanner.nextLine();
                 for (User student : userList) {
@@ -69,7 +66,6 @@ public class UserList {
                 scanner.close();
             }
             else if (choice == 2) {
-                Scanner scanner = new Scanner(System.in);
                 if (users.getActive() != null) {
                     System.out.println("What note would you like to add?: ");
                     String note = scanner.nextLine();
@@ -98,17 +94,6 @@ public class UserList {
 
     
 
-    public int RoadmapAdvisorOptions(User user) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Hello "+user.getFirstName()+". What would you like to do?\n1. View Student\n2. Add note\n");
-        int choice = 0;
-        // Consume newline character after nextInt()
-        if(scanner.hasNextInt()) {
-            choice = scanner.nextInt();
-        }
-        scanner.close();
-        return choice;
-    }
 
     public boolean addAdvisee(String advisorUsername, String studentId) {
          UserList userList = UserList.getInstance();
