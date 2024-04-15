@@ -330,6 +330,7 @@ public class DataLoader extends DataConstant {
                 if(major.equalsIgnoreCase("cis")) {
                     System.out.println("Loading CIS");
                     CisState state = new CisState(roadmap);
+                    // default state
                     JSONArray majorClasses = (JSONArray)roadmapObject.get(ROADMAP_MAJOR_CLASSES);
                    
                     if(majorClasses.size() != 0) {

@@ -15,4 +15,20 @@ public class CompletedState extends StatusState {
         return completed;
     }
 
+    public String toString() {
+        StringBuilder ceString = new StringBuilder(super.toString());
+
+        ceString.append("\nElectrical Engineering Courses:\n");
+        for (Class course : completed) {
+            ceString.append(course.toString());
+        }
+
+        return ceString.toString();
+    }
+
+    public void clear() {
+        this.clear();
+        this.electricalEngineering.clear();
+    }
+
 }

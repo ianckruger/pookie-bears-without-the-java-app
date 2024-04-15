@@ -4,22 +4,17 @@ import java.util.ArrayList;
 public abstract class StatusState {
     protected Roadmap roadmap;
     protected StatusState statusState;
+    protected ArrayList<Class> courses;
 
     public StatusState(Roadmap roadmap) {
-        this.roadmap = roadmap;
+ 
     }
 
     public StatusState(StatusState statusState) {
         this.statusState = statusState;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
-    }
 
-    public boolean getCompleted() {
-        return this.completed;
-    }
 
 
 }
