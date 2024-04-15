@@ -256,7 +256,7 @@ public class DataLoader extends DataConstant {
                         transferred = (Boolean)courseAndStudentObject.get(STUDENT_COURSE_TRANSFERRED);
                         inProgress = (Boolean)courseAndStudentObject.get(STUDENT_COURSE_IN_PROGRESS);
                         completed = (Boolean)courseAndStudentObject.get(STUDENT_COURSE_COMPLETED);
-                        grade = (Double)courseAndStudentObject.get(STUDENT_COURSE_GRADE);
+                        grade = ((Number)courseAndStudentObject.get(STUDENT_COURSE_GRADE)).doubleValue();
                         break;
                     }
                 }
