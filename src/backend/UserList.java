@@ -9,13 +9,10 @@ public class UserList {
     private ArrayList<User> userList;
     private User ActiveUser;
     private User advisor;
-    // private Scanner scanner;
 
     private UserList() {
         this.ActiveUser = null;
-        this.userList = new ArrayList<User>();        
-        // this.scanner = new Scanner(System.in);
-        
+        this.userList = new ArrayList<User>();                
          
     }
 
@@ -91,8 +88,6 @@ public class UserList {
     }
 
     
-
-
     public boolean addAdvisee(String advisorUsername, String studentId) {
          UserList userList = UserList.getInstance();
         
