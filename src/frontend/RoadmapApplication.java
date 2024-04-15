@@ -29,9 +29,6 @@ public class RoadmapApplication {
 
     public RoadmapApplication() {
         this.userlist = UserList.getInstance();
-        // this.scanner = new Scanner(System.in);
- 
-        
     }
 
     public boolean register(String userName, String firstName, String lastName, String password, String userType) {
@@ -101,9 +98,7 @@ public class RoadmapApplication {
         } else {
             System.out.println("Student is null");
             return false;
-        }
-        
-        
+        } 
          
     }
 
