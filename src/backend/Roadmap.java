@@ -54,15 +54,7 @@ public class Roadmap {
         this.majorState = majorState;
     }
 
-    public void setMajorState(String major) {
-        if(major.equalsIgnoreCase("cis")){
-            setMajorState(cisState);
-        } else if (major.equalsIgnoreCase("ce")){
-            setMajorState(ceState);
-        } else if (major.equalsIgnoreCase("csce")){
-            setMajorState(csceState);
-        }
-    }
+    
 
     public void setCisState(CisState state) {
         this.cisState = state;

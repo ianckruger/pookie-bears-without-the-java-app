@@ -32,6 +32,14 @@ public class CourseList {
     public void addCourse(Class course) {
         courseList.add(course);
     }
+
+    public Class searchClass(String subjectCode, String courseNumber) {
+        for (Class i : courseList) {
+            if (i.getCourseSubjectCode().equals(subjectCode) && i.getCourseNumber().equals(courseNumber))
+                return i;
+        }
+        return null;
+    }
     
 
 }

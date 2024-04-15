@@ -128,7 +128,7 @@ public class UserList {
                             CourseList courseList = CourseList.getInstance();
                             Roadmap roadmap = Roadmap.getInstance();
                             roadmap.setRoadmap(roadmap);
-                            roadmap.setMajorState(student.getCurrentMajor());
+                            
                             return true;
                         } else if (user.getUserType().equalsIgnoreCase("advisor")) {
                             users.setAdvisor(user);
