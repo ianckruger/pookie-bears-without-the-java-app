@@ -128,6 +128,28 @@ public class RoadmapApplication {
          
     }
 
+    public boolean printEightSemesterPlan() {
+        Student student = (Student)userlist.getActive();
+        if(student != null) {
+            String major = student.getCurrentMajor();
+            if(major != null) {
+                Roadmap roadmap = Roadmap.getInstance();
+                System.out.println(roadmap.EightSemesterPlan());
+                return true;
+
+            } else {
+                System.out.println("Student's major type not found.");
+                return false;
+
+            }
+
+        } else {
+            System.out.println("Student is null");
+            return false;
+        }
+
+    }
+
     public boolean addNoteToStudent(String note) {
         if (note != null) {
             System.out.println(note);
