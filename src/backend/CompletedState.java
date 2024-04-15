@@ -7,12 +7,7 @@ public class CompletedState extends StatusState {
 
     public CompletedState(Roadmap roadmap) {
         super(roadmap);
-        this.completed = true;
-        setCompleted(completed);
     }
 
-    public boolean isCompleted() {
-        return completed;
-    }
 
 }
