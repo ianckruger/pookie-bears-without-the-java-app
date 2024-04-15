@@ -146,6 +146,9 @@ public abstract class MajorState {
             }
         }
 
+        msString.append("\nCompleted Courses \n");
+
+
         return msString.toString();
     }
 

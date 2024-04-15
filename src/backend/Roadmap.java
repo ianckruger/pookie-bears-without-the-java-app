@@ -10,9 +10,9 @@ public class Roadmap {
     private CsceState csceState;
     private CisState cisState;
     private CeState ceState;
-    // private DefaultState defaultState;
-    // private CompletedState completedState;
-    // private IncompletedState incompletedState;
+    private DefaultState defaultState;
+    private CompletedState completedState;
+    private IncompletedState incompletedState;
     // private HistoryState historyState;
     // private double progressBar;
     protected UUID roadmapID;

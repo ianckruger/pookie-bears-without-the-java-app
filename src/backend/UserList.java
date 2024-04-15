@@ -50,6 +50,7 @@ public class UserList {
     // MOVING THE ADD IN
 
     public void advisor(int choice, Scanner scanner) {
+        System.out.println(choice+ "advisor choice");
         if (choice == 1) {
                 System.out.println("Enter a student ID to find: ");
                 String studentId = scanner.nextLine();
@@ -87,6 +88,8 @@ public class UserList {
     }
 
     
+
+
     public boolean addAdvisee(String advisorUsername, String studentId) {
          UserList userList = UserList.getInstance();
         
