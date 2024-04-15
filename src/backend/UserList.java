@@ -9,12 +9,13 @@ public class UserList {
     private ArrayList<User> userList;
     private User ActiveUser;
     private User advisor;
-    private Scanner scanner;
+    // private Scanner scanner;
 
     private UserList() {
         this.ActiveUser = null;
-        this.userList = new ArrayList<User>();
-        this.scanner = new Scanner(System.in);
+        this.userList = new ArrayList<User>();        
+        // this.scanner = new Scanner(System.in);
+        
          
     }
 
@@ -51,82 +52,37 @@ public class UserList {
 
     // MOVING THE ADD IN
 
-    public void advisor() {
-        UserList users = UserList.getInstance();
-        ArrayList<User> userList = users.getUsers();
-        User user = users.getAdvisor();
-        System.out.println("Hello "+user.getFirstName()+". What would you like to do?\n1. View Student\n2. Add note\n");
-
-        boolean continueLoop = true;
-        while(continueLoop) {
-            System.out.println("\nChoose an option:");
-            System.out.println("1. View student's progress");
-            System.out.println("2. Add a note for the student");
-            System.out.println("3. Exit");
-            int choice = scanner.nextInt(); // Read user input
-            scanner.nextLine(); 
-           
-        //     switch (choice) {
-        //         case 1:
-        //         System.out.println("Enter a student ID to find: ");
-        //                 String studentId = scanner.nextLine();
-        //                 for (User student : userList) {
-        //                     if (student.getUserUUID().toString().equals(studentId) && student.getUserType().equalsIgnoreCase("student")) {
-        //                         users.setActiveUser(student);
-        //                         CourseList courseList = CourseList.getInstance();
-        //                         Roadmap roadmap = Roadmap.getInstance();
-        //                     }
-        //                 }
-        //                 break;
-                    
-                    
-        //         case 2:
-        //         if (users.getActive() != null) {
-        //                         System.out.println("What note would you like to add?: ");
-        //                         String note = scanner.nextLine();
-        //                         Student student = (Student)users.getActive();
-        //                         ArrayList<String> notes = student.getNotes();
-        //                         notes.add(note);
-            
-
-        //     }
-        //     break;
-
-        // }
-
-    }
-            
-        
-        // try (Scanner scanner = new Scanner(System.in)) {
-        //     if (choice == 1) {
-        //         System.out.println("Enter a student ID to find: ");
-        //         String studentId = scanner.nextLine();
-        //         for (User student : userList) {
-        //             if (student.getUserUUID().toString().equals(studentId) && student.getUserType().equalsIgnoreCase("student")) {
-        //                 users.setActiveUser(student);
-        //                 CourseList courseList = CourseList.getInstance();
-        //                 Roadmap roadmap = Roadmap.getInstance();
-        //             }
-        //         }
-        //     }
-        //     else if (choice == 2) {
-        //         if (users.getActive() != null) {
-        //             System.out.println("What note would you like to add?: ");
-        //             String note = scanner.nextLine();
-        //             Student student = (Student)users.getActive();
-        //             ArrayList<String> notes = student.getNotes();
-        //             notes.add(note);
+    public void advisor(int choice, Scanner scanner) {
+        if (choice == 1) {
+                System.out.println("Enter a student ID to find: ");
+                String studentId = scanner.nextLine();
+                for (User student : userList) {
+                    if (student.getUserUUID().toString().equals(studentId) && student.getUserType().equalsIgnoreCase("student")) {
+                        users.setActiveUser(student);
+                        CourseList courseList = CourseList.getInstance();
+                        Roadmap roadmap = Roadmap.getInstance();
+                    }
+                }
+            }
+            else if (choice == 2) {
+                if (users.getActive() != null) {
+                    System.out.println("What note would you like to add?: ");
+                    String note = scanner.nextLine();
+                    Student student = (Student)users.getActive();
+                    ArrayList<String> notes = student.getNotes();
+                    notes.add(note);
 
 
         //         } else {
         //             System.out.println("Load a student first.");
         //         }
 
-        //         }
-        //     }
-    }
+                }
 
-    public void student() {
+    }
+}
+
+    public void student(Scanner scanner) {
         UserList users = UserList.getInstance();
         Student student = (Student)users.getActive();
         System.out.println("Hello "+student.getFirstName()+". What would you like to do?\n1. Display Roadmap\n2. Find Class");
@@ -136,15 +92,6 @@ public class UserList {
 
     
 
-    // public int RoadmapAdvisorOptions(User user, Scanner scanner) {
-    //     System.out.println("Hello "+user.getFirstName()+". What would you like to do?\n1. View Student\n2. Add note\n");
-        
-    //         int choice = scanner.nextInt();
-    //         scanner.nextLine();
-    //         return choice;
-       
-        
-    // }
 
     public boolean addAdvisee(String advisorUsername, String studentId) {
          UserList userList = UserList.getInstance();
@@ -166,10 +113,9 @@ public class UserList {
         }
         return false; // Return false if advisor or student not found, or student is not of type "student"
     }
-    public boolean login(String userName, String password) {
+    public boolean login(String userName, String password, Scanner scanner) {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
-        try (Scanner scanner = new Scanner(System.in)) {
             if (userList != null) {
                 for (User user : userList) {
                     if (user.getUserName().equals(userName) && user.getPassword().equals(password)) {
@@ -190,7 +136,6 @@ public class UserList {
                     }
                 }
             }
-        } 
         return false; // Return false if no user is found or incorrect credentials
 
     }

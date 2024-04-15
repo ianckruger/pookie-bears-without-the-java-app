@@ -22,14 +22,6 @@ public class UI {
     }
 
     
-    public void start() {
-        System.out.println("Enter your name:");
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "! Welcome to the Roadmap Application.");
-
-        //application.startApplication();
-    }
-    
 
     public void run() {
         int userChoice = displayMainMenu();
@@ -40,7 +32,8 @@ public class UI {
                 userLogin();
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
-                    application.advisor();
+                    int newChoice = displayAdvisorMenu();
+                    application.advisor(newChoice, scanner);
                 }
 
                 break;
@@ -59,9 +52,9 @@ public class UI {
             case 6:
                 scenario5(); // Creating an Advisor Account
                 break;
-            case 7:
-                scenario1(); // Running scenario 1
-                break;
+            // case 7:
+            //     scenario1(); // Running scenario 1
+            //     break;
             // case 8: 
             //     scenario2();
             //     break;
@@ -69,6 +62,8 @@ public class UI {
                 System.out.println("Invalid choice. Please enter a number between 1 and 6.");
         }
     }
+
+    
     
 
     public int displayMainMenu() {
@@ -80,25 +75,43 @@ public class UI {
         
         System.out.println("Enter your choice:");
 
-        int choice = scanner.nextInt();
+        String input = scanner.nextLine();
+		int choice = Integer.parseInt(input);
+		
         
         return choice;
     }
 
+    public int displayAdvisorMenu() {
+        System.out.println("What would you like to do?");
+        
+        System.out.println("1: Select Student");
+        System.out.println("2. Add note");
+        System.out.println("3. Print Student Progress");
+        System.out.println("Enter your choice:");
+        
+        String choice = scanner.nextLine();
+        int choiceInt = Integer.parseInt(choice);
+
+        
+        return choiceInt;
+    }
+
     public void userLogin() {
-        scanner.nextLine();
         System.out.println("Enter a username:");
         String userName = scanner.nextLine();
         System.out.println("Enter a password:");
         String password = scanner.nextLine();
 
-        if (!application.login(userName, password)) {
+
+        if (!application.login(userName, password, scanner)) {
             System.out.println("Username or Password is not correct.");
             return;
         }
         
         System.out.println(userName+" is now logged in");
         application.printStudentProgress();
+        application.printEightSemesterPlan();
 
         
     }
@@ -131,7 +144,7 @@ public class UI {
         }
 
         // wont work if not added to user list
-        if (!application.login(userName, password)) {
+        if (!application.login(userName, password, scanner)) {
             System.out.println("Username or Password is not correct.");
             return;
         }
@@ -199,25 +212,25 @@ public class UI {
         return application.register(userName, firstName, lastName, password , userType);
     }
 
-    public void scenario1() {
-        if (!application.login("brax-west", "brax-is-cool")) {
-            System.out.println("Sorry we couldn't log you in.");
-        } else {
+    // public void scenario1() {
+    //     if (!application.login("brax-west", "brax-is-cool")) {
+    //         System.out.println("Sorry we couldn't log you in.");
+    //     } else {
 
-            System.out.println("Brax West is now logged in\nGenerating student's current progress...");
+    //         System.out.println("Brax West is now logged in\nGenerating student's current progress...");
 
-            if(application.printStudentProgress()) {
-                System.out.println("Student's progress printed successfully.");
+    //         if(application.printStudentProgress()) {
+    //             System.out.println("Student's progress printed successfully.");
                 
-            }
-            else {
-                System.out.println("Failed to print student's progress.");
-            }
+    //         }
+    //         else {
+    //             System.out.println("Failed to print student's progress.");
+    //         }
 
-        }
+    //     }
 
 
-    }
+    // }
 }
 
 
