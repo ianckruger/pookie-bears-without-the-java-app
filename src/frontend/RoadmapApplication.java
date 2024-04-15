@@ -22,16 +22,13 @@ public class RoadmapApplication {
     private UserList userlist;
     private Roadmap roadmap;
     private User user;
-    private Scanner scanner;
+    // private Scanner scanner;
     private CourseList courseList;
     
 
 
     public RoadmapApplication() {
         this.userlist = UserList.getInstance();
-        this.scanner = new Scanner(System.in);
- 
-        
     }
 
     public boolean register(String userName, String firstName, String lastName, String password, String userType) {
@@ -42,10 +39,10 @@ public class RoadmapApplication {
 
    }
 
-    public boolean login(String userName, String password) {
+    public boolean login(String userName, String password, Scanner scanner) {
         UserList users = UserList.getInstance();
         ArrayList<User> userList = users.getUsers();
-        if(users.login(userName, password)) {
+        if(users.login(userName, password, scanner)) {
             return true;
         }
         return false;
@@ -53,14 +50,14 @@ public class RoadmapApplication {
     }
 
 
-    public void advisor() {
+    public void advisor(int choice, Scanner scanner) {
         UserList userList = UserList.getInstance();
-        userList.advisor();
+        userList.advisor(choice, scanner);
     }
 
-    public void student() {
+    public void student(Scanner scanner) {
         UserList userList = UserList.getInstance();
-        userList.student();
+        userList.student(scanner);
     }
 <<<<<<< HEAD
 
@@ -127,9 +124,7 @@ public class RoadmapApplication {
         } else {
             System.out.println("Student is null");
             return false;
-        }
-        
-        
+        } 
          
     }
 

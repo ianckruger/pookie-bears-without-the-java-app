@@ -3,16 +3,17 @@ package backend;
 import java.util.ArrayList;
 
 public class CompletedState extends StatusState {
-    protected boolean completed;
+    private boolean isCompleted;
 
     public CompletedState(Roadmap roadmap) {
         super(roadmap);
-        this.completed = true;
-        setCompleted(completed);
+        this.isCompleted = true;
+        // setCompleted(completed);
     }
 
     public boolean isCompleted() {
-        return completed;
+        return isCompleted;
     }
+
 
 }

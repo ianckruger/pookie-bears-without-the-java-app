@@ -10,15 +10,16 @@ public class Roadmap {
     private CsceState csceState;
     private CisState cisState;
     private CeState ceState;
-    // private DefaultState defaultState;
-    // private CompletedState completedState;
-    // private IncompletedState incompletedState;
+    private DefaultState defaultState;
+    private CompletedState completedState;
+    private IncompletedState incompletedState;
     // private HistoryState historyState;
     // private double progressBar;
     protected UUID roadmapID;
     private String major;
     private static Roadmap roadmap;
     private ArrayList<String> advisorNotes;
+    private StatusState statusState;
 
 
     public Roadmap(String major) {
@@ -27,6 +28,9 @@ public class Roadmap {
         cisState = new CisState(this);
         csceState = new CsceState(this);
         ceState = new CeState(this);
+        defaultState = new DefaultState(this);
+        completedState = new CompletedState(this);
+        incompletedState = new IncompletedState(this);
 
         
         if(major.equalsIgnoreCase("cis")){
@@ -52,6 +56,25 @@ public class Roadmap {
 
     public void setMajorState(MajorState majorState) {
         this.majorState = majorState;
+    }
+
+    public void setStatusState(StatusState statusState) {
+        this.statusState = statusState;
+    }
+
+    public void setDefaultState(DefaultState defaultState) {
+        this.defaultState = defaultState;
+        setStatusState(defaultState);
+    }
+
+    public void setCompletedState(CompletedState completedState) {
+        this.completedState = completedState;
+        setStatusState(completedState);
+    }
+
+    public void setIncompletedState(IncompletedState incompletedState) {
+        this.incompletedState = incompletedState;
+        setStatusState(incompletedState);
     }
 
     public void setMajorState(String major) {
