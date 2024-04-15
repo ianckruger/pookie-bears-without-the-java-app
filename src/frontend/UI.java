@@ -29,8 +29,6 @@ public class UI {
             case 1:
                 System.out.println("Logging in...");
                 userLogin();
-                System.out.println(scanner.hasNext());
-                System.out.println(scanner.hasNextInt());
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
                     int newChoice = displayAdvisorMenu();
@@ -88,12 +86,11 @@ public class UI {
         
         System.out.println("1: Select Student");
         System.out.println("2. Add note");
+        System.out.println("3. Print Student Progress");
         System.out.println("Enter your choice:");
         
         String choice = scanner.nextLine();
         int choiceInt = Integer.parseInt(choice);
-        System.out.println(scanner.hasNext());
-        System.out.println(scanner.hasNextInt());
 
         
         return choiceInt;
