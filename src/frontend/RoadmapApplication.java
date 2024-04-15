@@ -59,6 +59,32 @@ public class RoadmapApplication {
         UserList userList = UserList.getInstance();
         userList.student(scanner);
     }
+<<<<<<< HEAD
+
+    
+
+    public boolean addAdvisee(String advisorUsername, String studentId) {
+         UserList userList = UserList.getInstance();
+        
+        // Loop through the user list to find the advisor and student
+        for (User user : userList.getUsers()) {
+            // Check if the user is an advisor and has the provided username
+            if (user.getUserType().equalsIgnoreCase("advisor") && user.getUserName().equals(advisorUsername)) {
+                Advisor advisor = (Advisor) user; // Cast the user to an advisor
+                // Find the student object based on the studentId
+                for (User student : userList.getUsers()) {
+                    if (student.getUserUUID().toString().equals(studentId) && student.getUserType().equalsIgnoreCase("student")) {
+                        // Add the student to the advisor's list of students
+                        advisor.addStudent(studentId);
+                        return true;
+                    }
+                }
+            }
+        }
+        return false; // Return false if advisor or student not found, or student is not of type "student"
+    }
+=======
+>>>>>>> afbfb9a807f84d8bfb8d7c84c62d64e62e76253f
      
 
     public boolean isUsernameTaken(String userName) {
@@ -89,7 +115,7 @@ public class RoadmapApplication {
             String major = student.getCurrentMajor();
             if (major != null ) {
                 Roadmap roadmap = Roadmap.getInstance();
-                System.out.println(roadmap.displayClasses());
+               System.out.println(roadmap.displayClasses());
                 return true;
             } else {
                 System.out.println("Student's major type not found.");
@@ -100,6 +126,28 @@ public class RoadmapApplication {
             return false;
         } 
          
+    }
+
+    public boolean printEightSemesterPlan() {
+        Student student = (Student)userlist.getActive();
+        if(student != null) {
+            String major = student.getCurrentMajor();
+            if(major != null) {
+                Roadmap roadmap = Roadmap.getInstance();
+                System.out.println(roadmap.EightSemesterPlan());
+                return true;
+
+            } else {
+                System.out.println("Student's major type not found.");
+                return false;
+
+            }
+
+        } else {
+            System.out.println("Student is null");
+            return false;
+        }
+
     }
 
     public boolean addNoteToStudent(String note) {

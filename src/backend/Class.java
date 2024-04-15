@@ -198,14 +198,14 @@ public class Class {
     public String toString() {
         if (this.completed) {
             if (checkIfFailed()) {
-                return courseSubjectCode + courseNumber + ":" + courseTitle + " --  Grade: " + grade + " - Failed\n";
+                return courseSubjectCode + courseNumber + ":" + courseTitle + " -- Credits: "+ credits + " --  Grade: " + grade + " - Failed\n";
             } else {
-                return courseSubjectCode + courseNumber + ":" + courseTitle + " --  Grade: " + grade + " - Passed\n";
+                return courseSubjectCode + courseNumber + ":" + courseTitle +  " -- Credits: "+ credits + " --  Grade: " + grade + " - Passed\n";
             }
         } else if (inProgress) {
-            return courseSubjectCode + courseNumber + ":" + courseTitle + " --  In Progress\n"; // for the future change the color
+            return courseSubjectCode + courseNumber + ":" + courseTitle +  " -- Credits: "+ credits + " --  In Progress\n"; // for the future change the color
         }
-        return courseSubjectCode + courseNumber + ":" + courseTitle + "\n";
+        return courseSubjectCode + courseNumber + ":" + courseTitle +  " -- Credits: "+ credits+"\n";
     }
 
     

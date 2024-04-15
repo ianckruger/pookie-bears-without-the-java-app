@@ -71,9 +71,9 @@ public class UserList {
                     notes.add(note);
 
 
-                } else {
-                    System.out.println("Load a student first.");
-                }
+        //         } else {
+        //             System.out.println("Load a student first.");
+        //         }
 
                 }
             else if (choice == 3) {
@@ -81,6 +81,7 @@ public class UserList {
             }
 
     }
+}
 
     public void student(Scanner scanner) {
         UserList users = UserList.getInstance();
