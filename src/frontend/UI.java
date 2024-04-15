@@ -36,6 +36,7 @@ public class UI {
         switch (userChoice) {
             case 1:
                 System.out.println("Logging in...");
+
                 userLogin();
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
