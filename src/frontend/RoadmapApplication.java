@@ -87,6 +87,7 @@ public class RoadmapApplication {
  
         if(student != null) {
             String major = student.getCurrentMajor();
+            System.out.println(major);
             if (major != null ) {
                 Roadmap roadmap = Roadmap.getInstance();
                System.out.println(roadmap.displayClasses());

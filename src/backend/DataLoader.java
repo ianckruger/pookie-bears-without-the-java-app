@@ -387,7 +387,7 @@ public class DataLoader extends DataConstant {
                         for (int j = 0; j < lowerDivisonComputing.size(); j++) {
                             for(Class course : courses.getCourses() ) {
                                 if (lowerDivisonComputing.get(j).equals(course.getCourseID().toString())) {
-                                    state.getFoundationalCourses().add(course);
+                                    state.getLowerDivisionComputing().add(course);
                                 }
                             }
                         }
@@ -463,7 +463,7 @@ public class DataLoader extends DataConstant {
                         for (int j = 0; j < lowerDivisonComputing.size(); j++) {
                             for(Class course : courses.getCourses() ) {
                                 if (lowerDivisonComputing.get(j).equals(course.getCourseID().toString())) {
-                                    state.getFoundationalCourses().add(course);
+                                    state.getLowerDivisionComputing().add(course);
                                 }
                             }
                         }

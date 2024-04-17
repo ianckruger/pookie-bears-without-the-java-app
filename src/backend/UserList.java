@@ -59,9 +59,6 @@ public class UserList {
                         CourseList courseList = CourseList.getInstance();
                         Roadmap roadmap = Roadmap.getInstance();
                     }
-                    else {
-                        System.out.println("Not A Student");
-                    }
                 }
             }
             else if (choice == 2) {

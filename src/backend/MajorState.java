@@ -101,7 +101,7 @@ public abstract class MajorState {
         StringBuilder msString = new StringBuilder();
 
         msString.append("\nMajor Classes: \n");
-        System.out.println(majorState);
+        
         if(!getMajorClasses().isEmpty()) {
             for (Class course : getMajorClasses()) {
                msString.append(course.toString());
