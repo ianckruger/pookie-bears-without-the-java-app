@@ -49,38 +49,31 @@ public class UserList {
 
     // MOVING THE ADD IN
 
-    public void advisor(int choice, Scanner scanner) {
-        if (choice == 1) {
-                System.out.println("Enter a student ID to find: ");
-                String studentId = scanner.nextLine();
-                for (User student : userList) {
-                    if (student.getUserUUID().toString().equals(studentId) && student.getUserType().equalsIgnoreCase("student")) {
-                        users.setActiveUser(student);
-                        CourseList courseList = CourseList.getInstance();
-                        Roadmap roadmap = Roadmap.getInstance();
-                    }
-                }
+    public void SelectStudent(String id) {
+        for (User student : userList) {
+            if (student.getUserUUID().toString().equals(id) && student.getUserType().equalsIgnoreCase("student")) {
+                users.setActiveUser(student);
+                CourseList courseList = CourseList.getInstance();
+                Roadmap roadmap = Roadmap.getInstance();
             }
-            else if (choice == 2) {
-                if (users.getActive() != null) {
-                    System.out.println("What note would you like to add?: ");
-                    String note = scanner.nextLine();
-                    Student student = (Student)users.getActive();
-                    ArrayList<String> notes = student.getNotes();
-                    notes.add(note);
-
-
-        //         } else {
-        //             System.out.println("Load a student first.");
-        //         }
-
-                }
-            else if (choice == 3) {
-
-            }
-
+        }
     }
-}
+
+    public void printStudentProgress() {
+        Student student = (Student) ActiveUser;
+ 
+        if(student != null) {
+            String major = student.getCurrentMajor();
+            System.out.println(major);
+            if (major != null ) {
+                Roadmap roadmap = Roadmap.getInstance();
+               System.out.println(roadmap.displayClasses());
+            }
+        }
+         
+    }
+
+    
 
     public void student(Scanner scanner) {
         UserList users = UserList.getInstance();
@@ -93,7 +86,7 @@ public class UserList {
     
 
 
-    public boolean addAdvisee(String advisorUsername, String studentId) {
+    public void addAdvisee(String advisorUsername, String studentId) {
          UserList userList = UserList.getInstance();
         
         // Loop through the user list to find the advisor and student
@@ -106,12 +99,11 @@ public class UserList {
                     if (student.getUserUUID().toString().equals(studentId) && student.getUserType().equalsIgnoreCase("student")) {
                         // Add the student to the advisor's list of students
                         advisor.addStudent(studentId);
-                        return true;
                     }
                 }
             }
         }
-        return false; // Return false if advisor or student not found, or student is not of type "student"
+    // Return false if advisor or student not found, or student is not of type "student"
     }
     public boolean login(String userName, String password, Scanner scanner) {
         UserList users = UserList.getInstance();

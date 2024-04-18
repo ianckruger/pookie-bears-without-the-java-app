@@ -49,10 +49,13 @@ public class RoadmapApplication {
        
     }
 
+    public void addAdvisee(String advisorUsername, String studentId) {
+        userlist.addAdvisee(advisorUsername, studentId);
+    }
 
-    public void advisor(int choice, Scanner scanner) {
-        UserList userList = UserList.getInstance();
-        userList.advisor(choice, scanner);
+
+    public void SelectStudent(String id) {
+        userlist.SelectStudent(id);
     }
 
     public void student(Scanner scanner) {
@@ -82,25 +85,8 @@ public class RoadmapApplication {
 
     }
 
-    public boolean printStudentProgress() {
-        Student student = (Student)userlist.getActive();
- 
-        if(student != null) {
-            String major = student.getCurrentMajor();
-            System.out.println(major);
-            if (major != null ) {
-                Roadmap roadmap = Roadmap.getInstance();
-               System.out.println(roadmap.displayClasses());
-                return true;
-            } else {
-                System.out.println("Student's major type not found.");
-                 return false;
-            }
-        } else {
-            System.out.println("Student is null");
-            return false;
-        } 
-         
+    public void printStudentProgress() {
+        userlist.printStudentProgress();
     }
 
     public boolean printEightSemesterPlan() {
