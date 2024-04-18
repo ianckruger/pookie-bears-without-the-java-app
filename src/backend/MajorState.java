@@ -97,158 +97,56 @@ public abstract class MajorState {
         this.advisorNotes.clear();
     }
 
-    public String GetDefaultClasses() {
+
+    public String toString() {
         StringBuilder msString = new StringBuilder();
 
         msString.append("\nMajor Classes: \n");
-        
-        if(!getMajorClasses().isEmpty()) {
-            for (Class course : getMajorClasses()) {
+        if(!majorClasses.isEmpty()) {
+            for (Class course : majorClasses) {
                msString.append(course.toString());
             }
+        } else {
+            msString.append("No major classes available\n");
         }
         
+
+
         msString.append("\nCarolina Core: \n");
-        if(!getCarolinaCore().isEmpty()) {
-            for (Class course : getCarolinaCore()) {
+        if(!carolinaCore.isEmpty()) {
+            for (Class course : carolinaCore) {
                 msString.append(course.toString());
             }
         }
 
         msString.append("\nElectives: \n");
-        if(!getElectives().isEmpty()) {
-            for (Class course : getElectives()) {
+        if(!electives.isEmpty()) {
+            for (Class course : electives) {
                 msString.append(course.toString());
             }
         }
 
         msString.append("\nLiberal Arts Electives: \n");
-        if(!getLiberalArtsElectives().isEmpty()) {
-            for (Class course : getLiberalArtsElectives()) {
+        if(!liberalArtsElectives.isEmpty()) {
+            for (Class course : liberalArtsElectives) {
                 msString.append(course.toString());
             }
         }
 
         msString.append("\nFoundational Courses: \n");
-        if (!getFoundationalCourses().isEmpty()) {
-            for (Class course : getFoundationalCourses()) {
+        if (!foundationalCourses.isEmpty()) {
+            for (Class course : foundationalCourses) {
                 msString.append(course.toString());
             }
         }
 
         msString.append("\nLower Division Computing: \n");
-        if (!getLowerDivisionComputing().isEmpty()) {
-            for (Class course : getLowerDivisionComputing()) {
+        if (!lowerDivisionComputing.isEmpty()) {
+            for (Class course : lowerDivisionComputing) {
                 msString.append(course.toString());
             }
         }
-        return msString.toString();
-    }
 
-
-public String GetCompletedClasses(MajorState majorState) {
-    StringBuilder msString = new StringBuilder();
-
-        msString.append("\nMajor Classes: \n");
-        if(!getMajorClasses().isEmpty()) {
-            for (Class course : getMajorClasses()) {
-                if(course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-        
-        msString.append("\nCarolina Core: \n");
-        if(!getCarolinaCore().isEmpty()) {
-            for (Class course : getCarolinaCore()) {
-                if(course.IsCompleted() || course.inProgress()) 
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nElectives: \n");
-        if(!getElectives().isEmpty()) {
-            for (Class course : getElectives()) {
-                if(course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nLiberal Arts Electives: \n");
-        if(!getLiberalArtsElectives().isEmpty()) {
-            for (Class course : getLiberalArtsElectives()) {
-                if(course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nFoundational Courses: \n");
-        if (!getFoundationalCourses().isEmpty()) {
-            for (Class course : getFoundationalCourses()) {
-                if(course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nLower Division Computing: \n");
-        if (!getLowerDivisionComputing().isEmpty()) {
-            for (Class course : getLowerDivisionComputing()) {
-                if(course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-        return msString.toString();
-    }
-
-    public String GetIncompletedClasses(MajorState majorState) {
-    StringBuilder msString = new StringBuilder();
-
-        msString.append("\nMajor Classes: \n");
-        if(!getMajorClasses().isEmpty()) {
-            for (Class course : getMajorClasses()) {
-                if(!course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-        
-        msString.append("\nCarolina Core: \n");
-        if(!getCarolinaCore().isEmpty()) {
-            for (Class course : getCarolinaCore()) {
-                if(!course.IsCompleted() || course.inProgress()) 
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nElectives: \n");
-        if(!getElectives().isEmpty()) {
-            for (Class course : getElectives()) {
-                if(!course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nLiberal Arts Electives: \n");
-        if(!getLiberalArtsElectives().isEmpty()) {
-            for (Class course : getLiberalArtsElectives()) {
-                if(!course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nFoundational Courses: \n");
-        if (!getFoundationalCourses().isEmpty()) {
-            for (Class course : getFoundationalCourses()) {
-                if(!course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
-
-        msString.append("\nLower Division Computing: \n");
-        if (!getLowerDivisionComputing().isEmpty()) {
-            for (Class course : getLowerDivisionComputing()) {
-                if(!course.IsCompleted() || course.inProgress())
-                    msString.append(course.toString());
-            }
-        }
         return msString.toString();
     }
 

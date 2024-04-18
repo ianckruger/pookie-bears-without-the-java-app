@@ -1,4 +1,4 @@
-package frontend;
+package backend;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -16,6 +16,7 @@ import backend.Parent;
 import backend.Roadmap;
 import backend.RoadmapList;
 import backend.Student;
+import java.util.ArrayList;
 
 public class RoadmapApplication {
 
@@ -24,11 +25,21 @@ public class RoadmapApplication {
     private User user;
     // private Scanner scanner;
     private CourseList courseList;
+    private static  RoadmapApplication application;
+
     
 
 
     public RoadmapApplication() {
         this.userlist = UserList.getInstance();
+    }
+
+    public static RoadmapApplication  getInstance(){
+        if( application == null){
+            application = new  RoadmapApplication();
+        }
+        
+        return application;
     }
 
     public boolean register(String userName, String firstName, String lastName, String password, String userType) {
@@ -137,6 +148,43 @@ public class RoadmapApplication {
     public void setRoadmap(Roadmap roadmap) {
         this.roadmap = roadmap;
     }
+    public ArrayList<Class> getClasses() {
+        Student student = (Student)userlist.getActive();
+        if(student != null) {
+            String major = student.getCurrentMajor();
+            if(major != null) {
+                return roadmap.getClasses();
+            } 
+        }   
+        return null;
+    }
+
+    public ArrayList<Class> getCompletedClasses() {
+        Student student = (Student)userlist.getActive();
+        if(student != null) {
+            String major = student.getCurrentMajor();
+            if(major!= null) {
+                return roadmap.getCompletedClasses();
+            }
+        }
+        return null;
+    }
+
+    public ArrayList<Class> getIncompletedClasses() {
+        Student student = (Student)userlist.getActive();
+        if(student != null) {
+            String major = student.getCurrentMajor();
+            if(major!= null) {
+                return roadmap.getIncompletedClasses();
+            }
+        }
+        return null;
+    }
+
+
+
+
+
 
 
    

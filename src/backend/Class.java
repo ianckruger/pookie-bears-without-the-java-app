@@ -195,17 +195,27 @@ public class Class {
         return false; // false if passed
     }
 
-    public String toString() {
+    public String getClassStatus() {
+        if (this.completed) {
+            return "Complete";
+        } else if (this.inProgress) {
+            return "In-Progress";
+        }
+        return "Incomplete";
+
+     }
+
+     public String toString() {
         if (this.completed) {
             if (checkIfFailed()) {
-                return courseSubjectCode + courseNumber + ":" + courseTitle + " -- Credits: "+ credits + " --  Grade: " + grade + " - Failed\n";
+                return courseSubjectCode + " "+courseNumber + ": " + courseTitle + " --  Grade: " + grade + " - Failed\n";
             } else {
-                return courseSubjectCode + courseNumber + ":" + courseTitle +  " -- Credits: "+ credits + " --  Grade: " + grade + " - Passed\n";
+                return courseSubjectCode + " "+ courseNumber + ": " + courseTitle + " --  Grade: " + grade + " - Passed\n";
             }
         } else if (inProgress) {
-            return courseSubjectCode + courseNumber + ":" + courseTitle +  " -- Credits: "+ credits + " --  In Progress\n"; // for the future change the color
+            return courseSubjectCode + " "+ courseNumber + ": " + courseTitle + " --  In Progress\n"; // for the future change the color
         }
-        return courseSubjectCode + courseNumber + ":" + courseTitle +  " -- Credits: "+ credits+"\n";
+        return courseSubjectCode + " "+ courseNumber + ": " + courseTitle + "\n";
     }
 
     
