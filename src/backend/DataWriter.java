@@ -56,14 +56,19 @@ public class DataWriter extends DataConstant {
         userDetails.put(USER_CURRENT_MAJOR, user.getCurrentMajor());
         JSONArray parentsArray = new JSONArray();
         JSONArray advisorsArray = new JSONArray();
+        JSONArray notesArray = new JSONArray();
         for (String parent : user.getParents()) {
             parentsArray.add(parent);
         }
         for (String advisor : user.getAdvisors()) {
             advisorsArray.add(advisor);
         }
+        for (String note : user.getNotes()) {
+            notesArray.add(note);
+        }
         userDetails.put(USER_PARENTS, advisorsArray);
         userDetails.put(USER_ADVISORS, parentsArray);
+        userDetails.put(USER_NOTES, notesArray);
         return userDetails;
     }
 

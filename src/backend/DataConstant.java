@@ -15,6 +15,7 @@ public abstract class DataConstant {
     protected static final String USER_PASSWORD = "password";
     protected static final String USER_USER_TYPE = "userType";
     protected static final String USER_USER_ID = "userID";
+    protected static final String USER_NOTES = "notes";
     protected static final String USER_GPA = "gpa";
     protected static final String USER_YEAR = "year";
     protected static final String USER_CURRENT_MAJOR = "currentMajor";
@@ -34,7 +35,6 @@ public abstract class DataConstant {
     // ROADMAP JSON KEYS
     protected static final String ROADMAP_ID = "roadmapID";
     protected static final String ROADMAP_MAJOR = "major";
-    protected static final String ROADMAP_NOTES = "notes";
     protected static final String ROADMAP_MAJOR_CLASSES = "majorClasses";
     protected static final String ROADMAP_CAROLINA_CORE = "carolinaCore";
     protected static final String ROADMAP_ELECTIVES = "electives";

@@ -136,13 +136,13 @@ public class RoadmapApplication {
 
     }
 
-    public boolean addNoteToStudent(String note) {
-        if (note != null) {
-            System.out.println(note);
-            return true;
-        }
-        return false;
+    public void addNoteToStudent(String note) {
+        userlist.addNote(note);
+    }
 
+    public ArrayList<String> GetNotes() {
+        Student user = (Student) userlist.getActive();
+        return user.getNotes();
     }
 
     public void setRoadmap(Roadmap roadmap) {

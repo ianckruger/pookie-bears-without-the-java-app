@@ -170,9 +170,15 @@ public class UserList {
     DataWriter.saveUsers();
     ActiveUser = null;
     return true;
-    
+    }
 
-}
+
+
+    public void addNote(String note) {
+        Student user = (Student)this.ActiveUser;
+        user.getNotes().add(note);
+    }
+
 
 
     
