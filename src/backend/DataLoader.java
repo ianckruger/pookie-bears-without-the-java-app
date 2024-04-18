@@ -132,7 +132,7 @@ public class DataLoader extends DataConstant {
         int degreeCredits = ((Number)userObject.get(USER_DEGREE_CREDITS)).intValue();
         JSONArray Jparents = (JSONArray)userObject.get(USER_PARENTS); // might need to modify this
         JSONArray Jadvisors = (JSONArray)userObject.get(USER_ADVISORS);
-        JSONArray Jnotes = (JSONArray)userObject.get(ROADMAP_NOTES);
+        JSONArray Jnotes = (JSONArray)userObject.get(USER_NOTES);
 
         ArrayList<String> notes = new ArrayList<>();
         if(!notes.isEmpty()) {

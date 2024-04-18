@@ -104,8 +104,6 @@ public class Roadmap {
         } else {
             return "No major found!";
         }
-        
-
     }
 
     public String getCSMajorPlan() {
