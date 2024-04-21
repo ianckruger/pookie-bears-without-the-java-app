@@ -52,7 +52,30 @@ public class Roadmap {
         this.majorState = majorState;
     }
 
-    
+    public boolean switchMajorState(String major) {
+        if(major.equalsIgnoreCase("cis")){
+            setMajorState(cisState);
+        } else if (major.equalsIgnoreCase("ce")){
+            setMajorState(ceState);
+        } else if (major.equalsIgnoreCase("csce")){
+            setMajorState(csceState);
+        }
+        return true;
+    }
+
+    public boolean switchMajorStateCIS() {
+        setMajorState(this.cisState);
+        return true;
+    }
+    public boolean switchMajorStateCSCE() {
+        setMajorState(this.csceState);
+        return true;
+    }
+    public boolean switchMajorStateCE() {
+        setMajorState(this.ceState);
+        return true;
+    }
+
     public void setMajorState(String major) {
         if(major.equalsIgnoreCase("cis")){
             setMajorState(cisState);
