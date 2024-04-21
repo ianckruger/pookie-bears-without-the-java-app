@@ -43,6 +43,8 @@ public abstract class MajorState {
         this.SemesterEight = new ArrayList<>();
     }
 
+    public abstract void GenerateSemesterPlan();
+
     public ArrayList<Class> getSemesterOne() {
         return this.SemesterOne;
     }
