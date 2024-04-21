@@ -40,6 +40,13 @@ public class CourseList {
         }
         return null;
     }
+
+    public void PrintClasses() {
+        for (int i = 0; i < courseList.size(); i++) {
+            Class course = courseList.get(i);
+            System.out.println(course.getPrereqs());
+        }
+    }
     
 
 }
