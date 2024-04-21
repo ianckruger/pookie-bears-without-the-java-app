@@ -126,6 +126,10 @@ public class RoadmapApplication {
         this.roadmap = roadmap;
     }
 
+    public void printClasses() {
+        CourseList courseList = CourseList.getInstance();
+        System.out.println(courseList.printClasses());
+    }
 
    
 }
