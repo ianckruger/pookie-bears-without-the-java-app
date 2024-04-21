@@ -135,13 +135,10 @@ public class DataLoader extends DataConstant {
         JSONArray Jnotes = (JSONArray)userObject.get(USER_NOTES);
 
         ArrayList<String> notes = new ArrayList<>();
-        if(!notes.isEmpty()) {
             for (int i = 0; i < Jnotes.size(); i++) {
                 String addThis = (String)Jnotes.get(i);
                 notes.add(addThis);
             }
-
-        }
         
 
         ArrayList<String> parents = new ArrayList<>();
@@ -331,6 +328,8 @@ public class DataLoader extends DataConstant {
                     System.out.println("Loading CIS");
                     CisState state = new CisState(roadmap);
                     // default state
+
+                    state.setAdvisorNotes(user.getNotes());
                     JSONArray majorClasses = (JSONArray)roadmapObject.get(ROADMAP_MAJOR_CLASSES);
                    
                     if(majorClasses.size() != 0) {
@@ -408,6 +407,7 @@ public class DataLoader extends DataConstant {
                 } else if (major.equalsIgnoreCase("ce")) {
                     System.out.println("Loading CE");
                     CeState state = new CeState(roadmap);
+                    state.setAdvisorNotes(user.getNotes());
                     JSONArray majorClasses = (JSONArray)roadmapObject.get(ROADMAP_MAJOR_CLASSES);
                     if(majorClasses.size()!= 0) {
                         for (int j = 0; j < majorClasses.size(); j++) {
@@ -486,6 +486,8 @@ public class DataLoader extends DataConstant {
                     System.out.println("Loading CSCE");
                     CsceState state = new CsceState(roadmap);
 
+                    state.setAdvisorNotes(user.getNotes());
+                    System.out.println(user.getNotes());
                     JSONArray majorClasses = (JSONArray)roadmapObject.get(ROADMAP_MAJOR_CLASSES);
                     if(majorClasses.size()!= 0) {
                         for (int j = 0; j < majorClasses.size(); j++) {

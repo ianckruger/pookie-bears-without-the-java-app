@@ -156,7 +156,7 @@ public class UserList {
    }
 
    public boolean logout() {
-    if (ActiveUser != null) {
+    if (ActiveUser == null && advisor == null) {
         return false;
     }
     DataWriter.saveUsers();

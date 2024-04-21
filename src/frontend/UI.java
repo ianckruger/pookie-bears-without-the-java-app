@@ -32,8 +32,26 @@ public class UI {
                 userLogin();
                 UserList users = UserList.getInstance();
                 if (users.getAdvisor()!=null) {
-                    int newChoice = displayAdvisorMenu();
-                    application.advisor(newChoice, scanner);
+                    boolean exit = false;
+                    int newChoice;
+                    while(!exit) {
+                        newChoice = displayAdvisorMenu();
+                        if(newChoice == 1) {
+                            System.out.println("Enter ID: ");
+                            String id = scanner.nextLine();
+                            application.SelectStudent(id);
+                        }
+                        else if (newChoice==2) {
+                            System.out.println("Enter note: ");
+                            String note = scanner.nextLine();
+                            application.addNoteToStudent(note);
+                        } else if (newChoice == 4) {
+                            application.logout();
+                            exit = true;
+                        } else if (newChoice == 3) {
+                            application.printStudentProgress();
+                        }
+                    }
                 }
 
                 break;
@@ -88,6 +106,7 @@ public class UI {
         System.out.println("1: Select Student");
         System.out.println("2. Add note");
         System.out.println("3. Print Student Progress");
+        System.out.println("4. exit");
         System.out.println("Enter your choice:");
         
         String choice = scanner.nextLine();

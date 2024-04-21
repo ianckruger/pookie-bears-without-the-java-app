@@ -14,6 +14,14 @@ public abstract class MajorState {
     protected ArrayList<Class> lowerDivisionComputing;
     protected MajorState majorState;
     protected ArrayList<String> advisorNotes;
+    protected ArrayList<Class> SemesterOne;
+    protected ArrayList<Class> SemesterTwo;
+    protected ArrayList<Class> SemesterThree;
+    protected ArrayList<Class> SemesterFour;
+    protected ArrayList<Class> SemesterFive;
+    protected ArrayList<Class> SemesterSix;
+    protected ArrayList<Class> SemesterSeven;
+    protected ArrayList<Class> SemesterEight;
     protected String major;
 
     public MajorState(Roadmap roadmap) {
@@ -24,7 +32,47 @@ public abstract class MajorState {
         this.liberalArtsElectives = new ArrayList<>();
         this.foundationalCourses = new ArrayList<>();
         this.lowerDivisionComputing = new ArrayList<>();
-        this.advisorNotes = new ArrayList<>();   
+        this.advisorNotes = new ArrayList<>();
+        this.SemesterOne = new ArrayList<>();
+        this.SemesterTwo = new ArrayList<>();
+        this.SemesterThree = new ArrayList<>();
+        this.SemesterFour = new ArrayList<>();
+        this.SemesterFive = new ArrayList<>();
+        this.SemesterSix = new ArrayList<>();
+        this.SemesterSeven = new ArrayList<>();
+        this.SemesterEight = new ArrayList<>();
+    }
+
+    public ArrayList<Class> getSemesterOne() {
+        return this.SemesterOne;
+    }
+
+    public ArrayList<Class> getSemesterTwo() {
+        return this.SemesterTwo;
+    }
+
+    public ArrayList<Class> getSemesterThree() {
+        return this.SemesterThree;
+    }
+
+    public ArrayList<Class> getSemesterFour() {
+        return this.SemesterFour;
+    }
+
+    public ArrayList<Class> getSemesterFive() {
+        return this.SemesterFive;
+    }
+
+    public ArrayList<Class> getSemesterSix() {
+        return this.SemesterSix;
+    }
+
+    public ArrayList<Class> getSemesterSeven() {
+        return this.SemesterSeven;
+    }
+
+    public ArrayList<Class> getSemesterEight() {
+        return this.SemesterEight;
     }
 
     public MajorState(MajorState majorState) {
@@ -87,6 +135,10 @@ public abstract class MajorState {
         return this.major;
     }
 
+    public void setAdvisorNotes(ArrayList<String> notes) {
+        this.advisorNotes = notes;
+    }
+
     public void clear() {
         this.majorClasses.clear();
         this.carolinaCore.clear();
@@ -100,7 +152,14 @@ public abstract class MajorState {
     public String GetDefaultClasses() {
         StringBuilder msString = new StringBuilder();
 
-        msString.append("\nMajor Classes: \n");
+        msString.append("\nAdvisor Notes: \n");
+        if(!advisorNotes.isEmpty()) {
+            for (String note : advisorNotes) {
+               msString.append(note);
+            }
+        }
+
+        msString.append("\n\nMajor Classes: \n");
         
         if(!getMajorClasses().isEmpty()) {
             for (Class course : getMajorClasses()) {

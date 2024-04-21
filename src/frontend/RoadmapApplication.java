@@ -113,6 +113,8 @@ public class RoadmapApplication {
 
     public void addNoteToStudent(String note) {
         userlist.addNote(note);
+        Roadmap roadmap = Roadmap.getInstance();
+        roadmap.getMajorState().setAdvisorNotes(GetNotes());
     }
 
     public ArrayList<String> GetNotes() {
