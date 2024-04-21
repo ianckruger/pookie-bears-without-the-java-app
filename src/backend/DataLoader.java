@@ -271,14 +271,6 @@ public class DataLoader extends DataConstant {
                 Class course = new Class(courseSubjectCode, courseNumber, courseTitle, courseID, credits, applicationArea, actualPrereqs, description, yearTaken, completed, inProgress, transferred, grade);
                 courses.addCourse(course);
 
-                
-                // AHHAHAHAGAGAHAG I DONT KNOW WHERE TO IMPLEMENT THE STUDENT INFORMATION FOR COURSE SPECIFIC THINGS
-                // maybe since user will be called first before everything like classes and roadmap, we can load every class
-                // specific to the user code?
-
-                // ok so we call the course and roadmap information after the user logs in
-                // 
-
 
             }
 
@@ -288,8 +280,8 @@ public class DataLoader extends DataConstant {
                     for ( String prereq : course.getPrereqIDs()) {
                         for (Class prereqCourse : courses.getCourses() ) {
                             if (prereqCourse.getCourseID().toString().equals(prereq)) {
+                                System.out.println("Got here");
                                 course.getPrereqs().add(prereqCourse);
-                                break;
                             }
                         }
                     }  
